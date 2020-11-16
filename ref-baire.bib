@@ -1,0 +1,2433 @@
+%  BibFile containing references in optimization and
+%  related topics.
+%
+%  The format of the of the BibTex entry label is :
+%
+%     <Lastname_morenames_YearLetter> .
+%
+%  For example, the key from a book by Dennis and Schnabel is :
+%
+%     Dennis_Schnabel_1983 .
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  The following are string macros for the standard journal
+%  abbreviations used in the review journal Mathematical Reviews.
+%
+@string{annals = "Ann. of Math."}
+@string{astat = "Ann. Math. Statist."}
+@string{actan = "Acta Numer."}
+@string{amj = "Amer. J. Math."}
+@string{amc = "Appl. Math. Comput."}
+@string{bit = "BIT"}
+@string{cacm = "Commun. ACM"}
+@string{coap = "Comput. Optim. Appl."}
+@string{ejor = "European J. Oper. Res."}
+@string{etna = "Electron. Trans. Numer. Anal."}
+@string{fcm = "Found. Comput. Math."}
+@string{imana = "IMA J. Numer. Anal."}
+@string{itmtt = "IEEE Trans. Microw. Theory Tech."}
+@string{jcomam = "J. Comput. Appl. Math."}
+@string{jcp = "J. Comput. Phys."} 
+@string{jogo = "J. Global Optim."}
+@string{jota = "J. Optim. Theory Appl."}
+@string{jrssb = "J. R. Stat. Soc. Ser. B. Stat. Methodol."}
+@string{jmaa = "J. Math. Anal. Appl."}
+@string{mathcomput = "Math. Comp."}
+@string{mprog = "Math. Program."}
+@string{mprogc = "Math. Program. Comput."}
+@string{nmath = "Numer. Math."}
+@string{nlaa = "Numer. Linear Algebra Appl."}
+@string{operres = "Oper. Res."}
+@string{opteng = "Optim. Eng."}
+@string{optl = "Optim. Lett."}
+@string{optms = "Optim. Methods Softw."}
+@string{qam = "Quart. Appl. Math."}
+@string{qor = "4OR"}
+@string{sico = "SIAM J. Control Optim."}
+@string{siis = "SIAM J. Imaging Sci."}
+@string{sinum = "SIAM J. Numer. Anal. "}
+@string{siopt = "SIAM J. Optim."}
+@string{sirev = "SIAM Rev."}
+@string{sisc = "SIAM J. Sci. Comput."}
+@string{sistc = "SIAM J. Sci. Stat. Comp."}
+@string{simax = "SIAM J. Matrix Anal. Appl."}
+@string{tams = "Trans. Amer. Math. Soc."}
+@string{toms = "ACM Trans. Math. Software"}
+
+%  The following are string macros for the standard series 
+%  abbreviations used in the review journal Mathematical Reviews.
+@string{asoc = "Athena Sci. Optim. Comput. Ser."}
+@string{cse = "Comput. Sci. Eng."}
+@string{mpso = "MPS-SIAM Ser. Optim."}
+@string{moso = "MOS-SIAM Ser. Optim."}
+@string{pms = "Princeton Math. Ser."}
+@string{sscm = "Springer Ser. Comput. Math."}
+@string{scam = "Ser. Contemp. Appl. Math. CAM"}
+@string{soa = "Springer Optim. Appl."}
+@string{sorfe = "Springer Ser. Oper. Res. Financ. Eng."}
+@string{aopt = "Appl. Optim."}
+@string{gmw = "Grundlehren Math. Wiss."}
+@string{fam = "Frontiers Appl. Math."}
+@string{lncse = "Lect. Notes Comput. Sci. Eng."}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{Levenberg_1944,
+title = {A method for the solution of certain non-linear problems in least squares},
+author = {Levenberg, K.},
+journal = qam,
+volume = {2},
+pages = {164--168},
+year = {1944}
+}
+
+@article{Marquardt_1963,
+title = {An algorithm for least-squares estimation of nonlinear parameters},
+author = {Marquardt, D. W.},
+journal = {J. Soc. Indust. Appl. Math.} ,
+volume = {11},
+pages = {431--441},
+year = {1963},
+}
+
+@article{Armijo_1966,
+author = {Armijo, L.},
+journal = {Pacific J. Math.},
+pages = {1--3},
+title = {Minimization of functions having {L}ipschitz continuous first partial derivatives},
+volume = {16},
+year = {1966}
+}
+
+@article{Osborne_1976, 
+title = {Nonlinear least squares --- the {Levenberg} algorithm revisited}, 
+volume = {19}, 
+journal = {J. Austral. Math. Soc.},
+author = {Osborne, M. R.}, 
+year = {1976}, 
+pages = {343–357}
+}
+
+@article{Rockafellar_1976,
+title = {Monotone operators and the proximal point algorithm},
+author = {Rockafellar, R. T.},
+journal = sico,
+volume = {14},
+pages = {877--898},
+year = {1976},
+}
+
+@article{Parikh_Boyd_2014,
+title = {Proximal algorithms},
+author = {Parikh, N. and Boyd, S.},
+journal = {Found. Trends Optim.},
+volume = {1},
+pages = {127--239},
+year = {2014},
+}
+
+@article{Bramble_Pasciak_Schatz_1986, 
+author = {Bramble,  J. and Pasciak, J.  and Schatz, A.}, 
+title = {The construction of preconditioners for elliptic problems by substructuring, {I}},
+journal = mathcomput,
+year = {1986},
+volume = {47},
+pages = {103--134}
+}
+
+@article{GBDantzig_PWolfe_1960,
+title = {Decomposition principle for linear programs},
+author = {G. B. Dantzig and P. Wolfe},
+journal = operres,
+volume = {8},
+pages = {101--111},
+year = {1960},
+publisher = {INFORMS}
+}
+
+@incollection{Powell_1975,
+title = {Convergence properties of a class of minimization algorithms},
+author = {Powell, M. J. D.},  
+editor = {Mangasarian, O. L. and Meyer, R. R. and Robinson, S. M.},
+booktitle = {Nonlinear Programming 2: Proceedings of the
+Special Interest Group on Mathematical Programming
+Symposium Conducted by the Computer Sciences
+Department at the University of Wisconsin-Madison,
+April 15--17, 1974},
+pages = {1--27},
+year = {1975},
+publisher = {Academic Press}
+}
+
+@article{Powell_1984,
+author = {Powell, M. J. D.},
+title = {On the global convergence of trust region algorithms for unconstrained minimization},
+journal = mprog,
+volume = {29},
+pages = {297-303},
+year = {1984},
+}
+
+@article{Xu_1992,
+title = {Iterative methods by space decomposition and subspace correction},
+author = {Xu, J.},
+journal = sirev,
+volume = {34},
+pages = {581--613},
+year = {1992}
+}
+
+@article{MCFerris_OLMangasarian_1994,
+author = {M. C. Ferris and O. L. Mangasarian},
+title = {Parallel variable distribution},
+journal = siopt,
+volume = {4}, 
+pages = {815--832},
+year = {1994}
+}
+
+@article{Mangasarian_1995,
+title = {Parallel gradient distribution in unconstrained optimization},
+author = {Mangasarian, O. L.},
+journal = sico,
+volume = {33},
+pages = {1916--1925},
+year = {1995},
+}
+
+@incollection{ARConn_NGould_ASartenaer_PhLToint_1994,
+author = {A. R. Conn and N. Gould and A. Sartenaer and Ph. L. Toint}, 
+title = {On iterated-subspace minimization methods for nonlinear
+optimization},
+booktitle = {Linear and nonlinear conjugate gradient-related methods},
+editor = {L. M. Adams and J. L. Nazareth},
+pages = {50--78},
+year = {1994},
+publisher = {SIAM},
+address = {Philadelphia}
+}
+
+@article{MGriebel_POswald_1995,
+title = {On the abstract theory of additive and multiplicative {Schwarz} algorithms},
+author = {M. Griebel and P. Oswald},
+journal = nmath,
+volume = {70},
+pages = {163--180},
+year = {1995},
+publisher = {Springer}
+}
+
+@article{SolodovMV_ZavrievSK_1998,
+title = {Error stability properties of generalized gradient-type algorithms},
+author = {Solodov, M. V. and Zavriev, S. K.},
+journal = jota,
+volume = {98},
+pages = {663--680},
+year = {1998},
+}
+@article{Solodov_1997,
+author = {M. V. Solodov}, 
+title = {New inexact parallel variable distribution algorithms},
+journal = coap,
+volume = {7},
+pages = {165-182},
+year = {1997}
+}
+
+@techreport{JEDennis_TSteihaug_1998,
+title = {A {Ferris-Mangasarian} Technique Applied to Linear Least
+Squares Problems},
+author = {J. E. {Dennis, Jr.} and T. Steihaug},
+year = {1998},
+institution = {Center for Research on Parallel Computation, Rice
+University},
+number = {CRPC-TR98740}
+}
+
+@article{Fukushima_1998,
+author = {M. Fukushima}, 
+title = {Parallel variable transformation in unconstrained optimization},
+journal = siopt,
+volume = {8}, 
+year = {1998},
+pages = {658--672}
+}
+
+@book{DPBertsekas_1999,
+title = {Nonlinear Programming},
+author = {D. P. Bertsekas},
+year = {1999},
+edition = {Second},
+series = asoc,
+volume = {4},
+publisher = {Athena Scientific},
+address = {Massachusetts}
+}
+
+@article{Cai_Sarkis_1999,
+title = {A restricted additive {Schwarz} preconditioner for general sparse linear systems},
+author = {Cai, X.-C. and Sarkis, M.},
+journal = sisc,
+volume = {21},
+pages = {792--797},
+year = {1999},
+publisher = {SIAM}
+}
+
+@article{Frommer_Renaut_1999,
+author = {Frommer, A. and Renaut, R. A.},
+title = {A unified approach to parallel space decomposition methods},
+journal = jcomam,
+volume = {110},
+pages = {205--223},
+year = {1999},
+}
+
+@article{Tai_Xu_2002,
+title = {Global and uniform convergence of subspace correction methods for some convex optimization problems},
+author = {Tai, X.-C. and Xu, J.},
+journal = mathcomput,
+volume = {71},
+pages = {105--124},
+year = {2002}
+}
+
+@article{Cai_Keyes_2002,
+title = {Nonlinearly preconditioned inexact {Newton} algorithms},
+author = {Cai, X.-C. and Keyes, D. E.},
+journal = sisc,
+volume = {24},
+pages = {183--200},
+year = {2002},
+publisher = {SIAM}
+}
+
+@book{Saad_2003,
+title = {Iterative Methods for Sparse Linear Systems},
+author = {Y. Saad},
+year = {2003},
+edition = {Second},
+publisher = {SIAM},
+address = {Philadelphia}
+}
+
+@incollection{Yuan_2007,
+author = {Y. Yuan},
+title = {Subspace techniques for nonlinear optimization},
+booktitle = {Some topics in industrial and applied mathematics},
+editor = {R. Jeltsch and T.-T. Li and I. H. Sloan},
+pages = {206--218},
+year = {2007},
+publisher = {World Scientific Publishing},
+address = {Singapore}
+}
+
+@incollection{Yuan_2014,
+author = {Yuan, Y.},
+title = {A review on subspace methods for nonlinear optimization},
+booktitle = {Proceedings of the International Congress of Mathematicians (Seoul 2014)},
+editor = {Jang, S. Y. and Kim, Y. R. and Lee D.-W. and Yie, I.},
+pages = {807--827},
+year = {2014},
+publisher = {Kyung Moon Sa Co. Ltd.},
+address = {Seoul}
+}
+
+@article{Ni_Yuan_1997,
+title = {A subspace limited memory quasi-{N}ewton algorithm for large-scale nonlinear bound constrained optimization},
+author = {Ni, Q. and Yuan, Y.},
+journal = mathcomput,
+volume = {66},
+pages = {1509--1520},
+year = {1997}
+}
+@article{Wang_Yuan_2006,
+title = {A subspace implementation of quasi-{Newton} trust region methods for unconstrained optimization},
+author = {Wang, Z. and Yuan, Y.},
+journal = nmath,
+volume = {104},
+pages = {241--269},
+year = {2006},
+}
+
+@misc{SBoyd_LXiao_AMutapcic_JMattingley_2008,
+author = {S. Boyd and L. Xiao and A. Mutapcic and J. Mattingley},
+title = {Notes on Decomposition Methods},
+howpublished = {Notes for EE364B, Stanford University},
+year = {2008},
+}
+
+@article{CAudet_JEDennis_SLeDigabel_2008,
+author = {C. Audet and J. E. {Dennis, Jr.} and S. Le Digabel},
+title = {Parallel space decomposition of the mesh adaptive direct search algorithm},
+journal = siopt,
+volume = {19}, 
+year = {2008},
+pages = {1150--1170}
+}
+
+@article{YYuan_2009,
+author = {Y. Yuan},
+title = {Subspace methods for large scale nonlinear equations and nonlinear least squares},
+journal = opteng,
+year = {2009},
+volume = {10},
+pages = {207--218},
+publisher = {Springer},
+}
+
+@phdthesis{Sharapov_1997,
+title = {Multilevel Subspace Correction for Large-Scale Optimization
+Problems},
+author = {Sharapov, I. A.},
+year = {1997},
+school = {University of California},
+address = {California}
+}
+
+@book{Nocedal_Wright_2006,
+title = {Numerical Optimization},
+author = {Nocedal, J. and Wright, S.},
+edition = {Second},
+series = sorfe,
+publisher = {Springer},
+address = {New York},
+year = {2006}
+}
+
+@book{Bertsekas_1999,
+author = {Bertsekas, D. P.},
+publisher = {Athena Scientific},
+title = {Nonlinear Programming},
+year = {1999}
+}
+
+@book{Conn_Gould_Toint_2000,
+title = {Trust-Region Methods},
+author = {Conn, A. R. and Gould, N. I. M. and Toint, Ph. L.},
+year = {2000},
+publisher = {SIAM},
+address = {Philadelphia}
+}
+
+@article{Grapiglia_Yuan_Yuan_2015,
+title = {On the convergence and worst-case complexity of
+trust-region and regularization methods for unconstrained
+optimization},
+author = {Grapiglia, G. N. and Yuan, J. and Yuan, Y.},
+journal = mprog,
+pages = {491--520},
+volume = {152},
+year = {2015},
+}
+
+@article{Gratton_Sartenaer_Toint_2008,
+title = {Recursive trust-region methods for multiscale nonlinear optimization},
+author = {Gratton, S. and Sartenaer, A. and Toint, Ph. L.},
+journal = siopt,
+volume = {19},
+pages = {414--444},
+year = {2008},
+}
+
+@article{Gross_Krause_2009,
+author = {Gro{\ss}, C. and Krause, R.},
+title = {On the Convergence of Recursive Trust-Region Methods for Multiscale Nonlinear Optimization and Applications to Nonlinear
+Mechanics},
+journal = siopt,
+volume = {47},
+pages = {3044-3069},
+year = {2009},
+}
+
+@article{Nash_2000,
+title = {A multigrid approach to discretized optimization problems},
+author = {Nash, S. G.},
+journal = optms,
+volume = {14},
+pages = {99--116},
+year = {2000},
+}
+
+@article{Lewis_Nash_2005,
+title = {Model problems for the multigrid optimization of systems governed by differential equations},
+author = {Lewis, R. M. and Nash, S. G.},
+journal = sisc, 
+volume = {26},
+pages = {1811--1837},
+year = {2005},
+}
+
+@article{Yuan_2009,
+title = {Subspace methods for large scale nonlinear equations and nonlinear least squares},
+author = {Yuan, Y.},
+journal = opteng,
+volume = {10},
+pages = {207--218},
+year = {2009},
+}
+
+@article{Toint_1988,
+title = {Global Convergence of a Class of Trust-Region Methods for Nonconvex Minimization in {Hilbert} Space},
+author = {Toint, {Ph. L.}},
+journal = imana,
+volume = {8},
+pages = {231--252},
+year = {1988},
+}
+
+@article{Carter_1993,
+title = {Numerical experience with a class of algorithms for
+nonlinear optimization using inexact function and gradient
+information},
+author = {Carter, R. G.},
+journal = sisc,
+volume = {14},
+year = {1993},
+}
+
+@article{Carter_1991a,
+title = {On the global convergence of trust region algorithms using inexact gradient information},
+author = {Carter, R. G.},
+journal = sinum,
+volume = {28},
+pages = {251--265},
+year = {1991},
+}
+
+@incollection{More_1983,
+title = {Recent developments in algorithms and software for trust region methods},
+author = {Mor{\'e}, J. J.},
+booktitle = {Mathematical Programming: The State of Art},
+editor = {Bachem, A. and Gr\"otschel, M. and Korte, B.},
+year = {1983},
+publisher = {Springer-Verlag},
+address = {Berlin}
+}
+
+@techreport{Carter_1991b,
+title = {A Worst-case Example Using Linesearch Methods for Numerical
+Optimization with Inexact Gradient Evaluations},
+author = {Carter, R. G.},
+institution = {Argonne National Laboratory},
+number = {MCS-P283-1291},
+year = {1991}
+}
+
+@article{Frommer_Schwandt_1997,
+title = {A unified representation and theory of algebraic additive
+{Schwarz} and multisplitting methods},
+author = {Frommer, A. and Schwandt, H.},
+journal = simax,
+volume = {18},
+pages = {893--912},
+year = {1997}
+}
+
+@article{Frommer_Szyld_1999,
+title = {Weighted max norms, splittings, and overlapping additive {Schwarz} iterations},
+author = {Frommer, A. and Szyld, D. B.},
+journal = nmath,
+volume = {83},
+pages = {259--278},
+year = {1999},
+}
+
+@article{Frommer_Szyld_2002,
+title = {An Algebraic Convergence Theory for Restricted Additive
+{Schwarz} Methods Using Weighted Max Norms},
+author = {Frommer, A. and Szyld, D. B.},
+journal = sinum,
+volume = {39},
+pages = {463-479},
+year = {2002}
+}
+
+@article{Polyak_1964,
+title = {Some methods of speeding up the convergence of iteration methods},
+author = {Polyak, B. T.},
+journal = {USSR Computational Mathematics and Mathematical Physics},
+volume = {4},
+pages = {1--17},
+year = {1964},
+}
+
+@article{Nesterov_2012,
+author = {Nesterov, Yu.},
+title = {Efficiency of coordinate descent methods on huge-scale optimization problems},
+journal = siopt,
+volume = {22},
+pages = {341-362},
+year = {20112}
+}
+
+@article{Nesterov_1983,
+title = {A method of solving a convex programming problem with
+$\mathcal{O}(1/k^2)$ convergence rate},
+author = {Nesterov, Yu.},
+journal = {Soviet Mathematics Doklady}, 
+year = {1983},
+volume = {27},
+pages = {372-376}
+}
+@book{Nesterov_2004,
+title = {Introductory Lectures on Convex Optimization: A Basic
+Course},
+author = {Yu. Nesterov},
+year = {2004},
+publisher = {Kluwer Academic Publishers},
+address = {London},
+}
+
+@incollection{Cartis_Gould_Toint_2019,
+title = {Evaluation complexity bounds for smooth constrained nonlinear optimization using scaled {KKT} conditions and high-order models},
+author = {Cartis, C. and Gould, N. I. M. and Toint, Ph. L.},
+year = {2019},
+booktitle = {Approximation and Optimization},
+editor = {Demetriou, I. C. and Pardalos, P. M.},
+address = {Berlin},
+publisher = {Springer}
+}
+
+@techreport{Cartis_Gould_Toint_2015_b,
+title = {Improved worst-case evaluation complexity for potentially
+rank-deficient nonlinear least-{Euclidian}-norm problems using higher-order regularized models},
+author = {Cartis, C. and Gould, N. I. M. and Toint, Ph. L.},
+year = {2015},
+number = {NAXYS-12-2015},
+institution = {University of Namur},
+}
+
+@article{More_Sorensen_1983,
+title = {Computing a trust region step},
+author = {Mor{\'e}, J. J. and Sorensen, D.},
+journal = sistc,
+volume = {4},
+pages = {553--572},
+year = {1983},
+}
+
+@article{Byrd_Schnabel_Shultz_1988,
+title = {Approximate solution of the trust region problem by minimization over two-dimensional subspaces},
+author = {Byrd, R. H. and Schnabel, R. and Shultz, G. A.},
+journal = mprog, 
+volume = {40},
+pages = {247--263},
+year = {1988},
+}
+
+@incollection{Powell_1970a,
+address = {London},
+author = {Powell, M. J. D.},
+booktitle = {Numerical Methods for Nonlinear Algebraic Equations},
+editor = {Rabinowitz, P.},
+pages = {87--114},
+publisher = {Gordon \& Breach Science},
+title = {A hybrid method for nonlinear equations},
+year = {1970}
+}
+
+@incollection{Powell_1970b,
+address = {London},
+author = {Powell, M. J. D.},
+booktitle = {Numerical Methods for Nonlinear Algebraic Equations},
+editor = {Rabinowitz, P.},
+pages = {115--161},
+publisher = {Gordon \& Breach Science},
+title = {A {Fortran} Subroutine for Solving Systems of Nonlinear
+Algebraic Equations},
+year = {1970}
+}
+
+@article{Dennis_Mei_1979,
+title = {Two new unconstrained optimization algorithms which use function and gradient values},
+author = {{Dennis, Jr.}, J. E. and Mei, H.},
+journal = jota,
+volume = {28},
+pages = {453--482},
+year = {1979},
+publisher = {Springer}
+}
+
+@article{Steihaug_1983,
+title = {The conjugate gradient method and trust regions in large scale optimization},
+author = {Steihaug, T.},
+journal = sinum,
+volume = {20},
+pages = {626--637},
+year = {1983},
+}
+
+@article{Birgin_Gardenghi_Martinez_Toint_2017,
+title = {Worst-case evaluation complexity for unconstrained
+nonlinear optimization using high-order regularized models},
+author = {Birgin, E. G. and Gardenghi, J. L. and Mart\'{i}nez, J. M. and
+Santos, S. A.  and Toint, Ph. L.},
+journal = mprog, 
+year = {2017},
+volume = {163}, 
+pages = {359--368}
+}
+
+@phdthesis{Thomas_1975,
+title = {Sequential Estimation Techniques for Quasi-{Newton} Algorithms},
+author = {Thomas, S. W.},
+year = {1975},
+school = {Cornell University},
+address = {New York}
+}
+
+@incollection{Yuan_1998,
+title = {An example of non-convergence of trust region algorithms},
+author = {Yuan, Y.},
+editor = {Yuan, Y.},
+booktitle = {Advances in Nonlinear Programming},
+pages = {205--215},
+year = {1998},
+publisher = {Kluwer Academic Publishers},
+address = {Dordrecht}
+}
+
+@techreport{Griewank_1981,
+title = {The modification of {Newton}'s method for unconstrained
+optimization by bounding cubic terms},
+author = {Griewank, A.},
+number = {Technical Report NA/12},
+year = {1981},
+institution = {DAMTP, University of Cambridge},
+}
+
+@article{Nesterov_Polyak_2006,
+title = {Cubic regularization of {Newton} method and its global performance},
+author = {Nesterov, Yu. and Polyak, B. T.},
+journal = mprog,
+volume = {108},
+pages = {177--205},
+year = {2006},
+}
+
+@article{Cartis_Gould_Toint_2011a,
+title = {Adaptive cubic regularisation methods for unconstrained optimization. {Part I}: motivation, convergence and numerical
+results},
+author = {Cartis, C. and Gould, N. I. M. and Toint, Ph. L.},
+journal = mprog,
+volume = {127},
+pages = {245--295},
+year = {2011},
+}
+
+@article{Cartis_Gould_Toint_2011b,
+title = {Adaptive cubic regularisation methods for unconstrained optimization. {Part II}: worst-case function-and derivative-evaluation complexity},
+author = {Cartis, C. and Gould, N. I. M. and Toint, Ph. L.},
+journal = mprog,
+volume = {130},
+pages = {295--319},
+year = {2011},
+}
+
+@article{Heinkenschloss_Vicent_2002,
+title = {Analysis of inexact trust-region {SQP} algorithms},
+author = {Heinkenschloss, M. and Vicente, L. N.},
+journal = siopt,
+volume = {12},
+pages = {283--302},
+year = {2002},
+publisher = {SIAM}
+}
+
+@article{Dennis_More_1977,
+title = {{Quasi-Newton} methods, motivation and theory},
+author = {Dennis, Jr., J. E. and Mor{\'e}, J. J.},
+journal = sirev,
+volume = {19},
+pages = {46--89},
+year = {1977},
+}
+
+@book{HighamNJ_2002,
+title = {Accuracy and Stability of Numerical Algorithms},
+author = {Higham, N. J.},
+year = {2002},
+edition = {Second},
+publisher = {SIAM},
+address = {Philadelphia}
+}
+
+@book{Rockafellar_1970,
+title = {Convex Analysis},
+author = {Rockafellar, R. T.},
+year = {1970},
+publisher = {Princeton University Press},
+address = {New Jersey}
+}
+
+@book{Rockafellar_Wets_1998,
+title = {Variational Analysis},
+author = {Rockafellar, R. T. and Wets, R. J.-B.},
+year = {1998},
+publisher = {Springer},
+address = {Berlin}
+}
+
+@TechReport{Leyffer_etal_2016,
+author = {Leyffer, S. and Wild, S. M. and Fagan, M. and
+Snir, M. and Palem, K. and Finkel, H. and Yoshii, K.},
+title = {Doing {Moore} with Less -- Leapfrogging {Moore's} Law with Inexactness for Supercomputing},
+institution = {Argonne National Laboratory MCS},
+year = {2016},
+number = {ANL/MCS-P6077-1016},
+}
+
+@article{Palem_2014,
+title = {Inexactness and a future of computing},
+author = {Palem, K. V.},
+journal = {Phil. Trans. R. Soc. A},
+volume = {372},
+pages = {20130281},
+year = {2014},
+}
+
+@article{BaboulinM_etal_2009,
+title = {Accelerating scientific computations with mixed precision
+algorithms},
+author = {Baboulin, M. and Buttari, A. and Dongarra, J.
+and Kurzak, J. and Langou, J. and Langou, J. and
+Luszczek, P. and Tomov, S.},
+journal = {Comput. Phys. Commun.},
+volume = {180},
+pages = {2526-2533},
+year = {2009},
+}
+
+@article{LKugler_2015,
+title = {Is ``good enough'' computing good enough?},
+author = {Kugler, L.},
+journal = cacm,
+volume = {58},
+pages = {12-14},
+year = 2015,
+}
+
+@article{Gratton_Vicente_2014,
+author = {Gratton, S. and Vicente, L. N.},
+title = {A Surrogate Management Framework Using Rigorous Trust-region Steps},
+journal = optms, 
+volume = {29},
+year = {2014},
+pages = {10--23},
+} 
+
+@article{Conn_Scheinberg_Vicente_2009_a,
+author = {Conn, A. R. and Scheinberg, K. and Vicente, L. N.},
+title = {Global Convergence of General Derivative-Free Trust-Region
+Algorithms to First- and Second-Order Critical Points},
+journal = siopt,
+volume = {20},
+pages = {387-415},
+year = {2009},
+}
+
+@book{Conn_Scheinberg_Vicente_2009_b,
+title = {Introduction to Derivative-Free Optimization},
+author = {Conn, A. R. and Scheinberg, K. and Vicente, L. N.},
+series = moso,
+volume = {8},
+year = {2009},
+publisher = {SIAM},
+address = {Philadelphia}
+}
+
+@incollection{Fan_Yuan_2001,
+title = {A new trust region algorithm with trust region radius converging to zero},
+author = {Fan, J. and Yuan, Y.},
+booktitle = {Proceedings of the 5th International Conference on Optimization: Techniques and Applications },
+editor = {Li, D. and Cai, X. Q.},
+pages = {786--794},
+year = {2001},
+publisher = {World Scientific Publishing},
+address = {Singapore},
+}
+
+@incollection{Yuan_2000,
+title = {A review of trust region algorithms for optimization},
+author = {Yuan, Y.},
+booktitle = {Proceedings of the Fourth International Congress on
+Industrial and Applied Mathematics},
+editor = {Ball, J. M. and  Hunt, J. C. R.}, 
+pages = {271--282},
+publisher = {Oxford University Press},
+address = {Oxford},
+year = {2000}
+}
+
+@article{Yuan_2015,
+title = {Recent advances in trust region algorithms},
+author = {Yuan, Y.},
+journal = mprog,
+volume = {151},
+pages = {249--281},
+year = {2015},
+}
+
+@article{Fan_2006,
+title = {Convergence rate of the trust region method for nonlinear equations under local error bound condition},
+author = {Fan, J.},
+journal = coap,
+volume = {34},
+pages = {215--227},
+year = {2006},
+}
+
+@article{Toint_2013,
+title = {Nonlinear stepsize control, trust regions and regularizations for unconstrained optimization},
+author = {Toint, Ph. L.},
+journal = optms,
+volume = {28},
+pages = {82--95},
+year = {2013},
+}
+
+@article{Grapiglia_Yuan_Yuan_2016,
+title = {Nonlinear Stepsize Control Algorithms: Complexity Bounds for First-and Second-Order Optimality},
+author = {Grapiglia, G. N. and Yuan, J. and Yuan, Y.},
+journal = jota,
+volume = {171},
+pages = {980--997},
+year = {2016},
+}
+
+@article{Gratton_Royer_Vicente_2019,
+title = {A decoupled first/second-order steps technique for nonconvex
+nonlinear unconstrained optimization with improved complexity bounds},
+author = {Gratton, S. and Royer, C. and Vicente, L. N.},
+year = {2019},
+journal = {\textnormal{to appear in} Math. Program.}
+}
+
+@article{ASBandeira_KScheinberg_LNVicente_2014,
+title = {Convergence of trust-region methods based on probabilistic models},
+author = {A. S. {Bandeira} and K. Scheinberg and L. N.  Vicente},
+journal = siopt,
+volume = {24},
+pages = {1238--1264},
+year = {2014}
+}
+
+@article{SGratton_CWRoyer_LNVicente_ZZhang_2015,
+title = {Direct search based on probabilistic descent},
+author = {S. Gratton and C. W. {Royer} and L. N.  {Vicente} and Z. Zhang},
+journal = siopt,
+volume = {25},
+pages = {1515--1541},
+year = {2015}
+}
+
+@article{SGratton_CWRoyer_LNVicente_ZZhang_2018,
+author = {S. Gratton and C. W. Royer and L. N. Vicente and Z. Zhang},
+title = {Complexity and global rates of trust-region methods based on probabilistic models},
+journal = imana,
+volume = {38},
+pages = {1579--1597},
+year = {2018}
+}
+
+@article{Bandeira_Scheinberg_Vicente_2014,
+title = {Convergence of trust-region methods based on probabilistic models},
+author = {A. S. {Bandeira} and K. Scheinberg and L. N. Vicente},
+journal = siopt,
+volume = {24},
+pages = {1238--1264},
+year = {2014}
+}
+
+@book{Conn_Gould_Toint_1992,
+author = {Conn, A. R. and Gould, N. I. M. and Toint, Ph. L.},
+title = {{LANCELOT}: A {F}ortran Package for Large-Scale Nonlinear Optimization (Release A)},
+year = {1992},
+publisher = {Springer-Verlag},
+address = {Berlin},
+} 
+
+@article{Gould_Orban_Sartenaer_Toint_2005,
+title = {Sensitivity of trust-region algorithms to their parameters},
+author = {Gould, N. I. M. and Orban, D. and Sartenaer, A. and
+Toint, Ph. L.},
+journal = qor,
+volume = {3},
+pages = {227--241},
+year = {2005},
+}
+
+@article{Efstathiou_Gander_2003,
+title = {Why restricted additive {Schwarz} converges faster than additive {Schwarz}},
+author = {Efstathiou, E. and Gander, M. J.},
+journal = bit, 
+volume = {43},
+pages = {945--959},
+year = {2003},
+}
+
+@incollection{Conn_Scheinberg_Toint_1997,
+title = {On the convergence of derivative-free methods for unconstrained optimization},
+author = {Conn, A. R. and Scheinberg, K. and Toint, Ph. L.},
+booktitle = {Approximation Theory and Optimization: Tributes to {M. J. D. Powell}},
+editor = {Iserles, A. and Buhmann, M. D.},
+pages = {83--108},
+year = {1997}, 
+publisher = {Cambridge University Press},
+address = {Cambridge},
+}
+
+@book{Dolean_Jolivet_Nataf_2015,
+author = {Dolean, V. and Jolivet, P. and Nataf, F.},
+title = {An Introduction to Domain Decomposition Methods: Algorithms, Theory, and Parallel Implementation},
+publisher = {SIAM},
+year = {2015},
+address = {Philadelphia},
+}
+
+@article{Zhang_Gu_Liu_2015,
+title = {Overlapping restricted additive {Schwarz} method with
+damping factor for ${H}$-matrix linear complementarity problem},
+journal = amc,
+volume = {271},
+pages = {1--10},
+year = {2015},
+author = {L. Zhang and T. Gu and X. Liu},
+}
+
+@techreport{Saad_1995, 
+title = {Data structures and algorithms for domain decomposition and
+distributed sparse matrix computations},
+number = {95-014},
+year = {1995},
+author = {Saad, Y.},
+institution = {University of Minnesota},
+address = {Minneapolis},
+}
+
+@book{Toselli_Widlund_2006,
+title = {Domain Decomposition Methods --- Algorithms and Theory},
+author = {Toselli, A. and Widlund, O. B.},
+series = sscm,
+volume = {34},
+year = {2006},
+publisher = {Springer},
+address = {Berlin}
+}
+
+@book{Smith_Bjorstad_Gropp_1996,
+title = {Domain Decomposition: Parallel Multilevel Methods for Elliptic Partial Differential Equations},
+author = {Smith, B. F. and Bj{\o}rstad, P. E. and Gropp, W. D.},
+year = {1996},
+publisher = {Cambridge University Press},
+address = {Cambridge},
+}
+
+@book{Quarteroni_Valli_1999,
+author = {Quarteroni, A. and Valli, A.},
+title = {Domain Decomposition Methods for Partial Differential Equations},
+publisher = {Oxford Science Publications},
+address = {Oxford},
+year = {1999}
+}
+
+@incollection{Lions_1988,
+title = {On the {Schwarz} alternating method. {I}},
+author = {Lions, P. L.},
+booktitle = {First International Symposium on Domain
+Decomposition Methods for Partial Differential Equations},
+editor = {Glowinski, R. and  Golub, G. H. and Meurant, G. A.
+and P\'{e}riaux, J.},
+pages = {1--42},
+year = {1988},
+publisher = {SIAM},
+address = {Philadelphia}
+}
+
+@article{Gander_2008,
+title = {{Schwarz} methods over the course of time},
+author = {Gander, M. J.},
+journal = etna,
+volume = {31},
+pages = {228--255},
+year = {2008}
+}
+
+@incollection{Gander_Wanner_2014,
+title = {The Origins of the Alternating {Schwarz} Method},
+author = {Gander, M. J. and Wanner, G.},
+booktitle = {Domain Decomposition Methods in Science and Engineering XXI},
+editor = {Erhel, J. and Gander, M. J. and Halpern, L. and Pichot, G.  and Sassi, T. and Widlund, O. B.},
+pages = {487--495},
+publisher = {Springer},
+address = {Berlin},
+year = {2014}
+}
+
+@article{Gander_Halpern_Nataf_2003,
+AUTHOR = {Gander, M. J. and Halpern, L. and
+Nataf, F.},
+TITLE = {Optimal {S}chwarz Waveform Relaxation for the One
+Dimensional Wave Equation},
+JOURNAL = {SIAM Journal of Numerical Analysis},
+VOLUME = {41},
+YEAR = {2003},
+NUMBER = {5},
+PAGES = {1643--1681}
+}
+
+@article{Gould_Orban_Toint_2015,
+author = { Gould,  N. I. M. and Orban, D. and Toint, Ph. L.},
+title = { {\sf CUTEst}: a constrained and unconstrained testing environment
+with safe threads for mathematical optimization},
+journal = coap,
+volume = {60},
+pages = {545--557},
+year = {2015}
+}
+
+@techreport{Holst_1994, 
+title = {Algebraic {Schwarz} theory},
+author = {Holst, M.},
+institution = {Department of Applied Mathematics and CRPC, California Institute of Technology},
+number = {CRPC-994-10},
+address = {California},
+year = {1994},
+}
+
+@Article{Hintermuller_Langer_2015,
+author = {Hinterm{\"u}ller, M. and Langer, A.},
+title = {Non-Overlapping Domain Decomposition Methods For Dual Total
+Variation Based Image Denoising},
+journal = jsc, 
+year = {2015},
+volume = {62},
+pages = {456--481},
+}
+
+@incollection{Ulbrich_2009,
+author = {Ulbrich, M.},
+title = {Optimization Methods in {Banach} Spaces},
+booktitle = {Optimization with {PDE} Constraints},
+year = {2009},
+publisher = {Springer},
+address = {Dordrecht},
+pages = {97--156},
+}
+
+@phdthesis{Gross_2009,
+title = {A Unifying Theory for Nonlinear Additively and
+Multiplicatively Preconditioned Globalization Strategies:
+Convergence Results and Examples From the Field of Nonlinear
+Elastostatics and Elastodynamics},
+author = {Gro{\ss}, C.},
+year = {2009},
+school = {University of Bonn},
+address = {Bonn}
+}
+
+@article{Gross_Krause_2009,
+title = {On the convergence of recursive trust-region methods for multiscale nonlinear optimization and applications to nonlinear mechanics},
+author = {Gro{\ss}, C. and Krause, R.},
+journal = sinum,
+volume = {47},
+pages = {3044--3069},
+year = {2009},
+}
+
+@Article{Krause_Rigazzi_Steiner_2016,
+author = {Krause, R.  and Rigazzi, A.  and Steiner, J.},
+title = {A parallel multigrid method for constrained minimization problems and its application to friction, contact, and obstacle problems},
+journal = {Comput. Vis. Sci.},
+year = {2016},
+volume = {18},
+pages = {1--15},
+}
+
+@article{Frommer_Schwandt_Szyld_1997,
+title = {Asynchronous weighted additive {Schwarz} methods},
+author = {Frommer, A. and Schwandt, H. and Szyld, D. B.},
+journal = etna,
+volume = {5},
+pages = {1--5},
+year = {1997}
+}
+
+@article{Tai_Espedal_1998,
+author = {Tai, X.-C. and Espedal, M.},
+title = {Rate of Convergence of Some Space Decomposition Methods for Linear and Nonlinear Problems},
+journal = sinum,
+volume = {35},
+pages = {1558-1570},
+year = {1998},
+}
+
+@Article{Duan_Tai_2012,
+author = {Duan, Y. and Tai, X.-C.},
+title = {Domain decomposition methods with graph cuts algorithms for total variation minimization}, 
+journal = {Adv. Comput. Math.},
+year = {2012},
+volume = {36},
+pages = {175--199},
+}
+
+@article{Cai_Saad_1996,
+title = {Overlapping domain decomposition algorithms for general sparse matrices},
+author = {Cai, X.-C. and Saad, Y.},
+journal = {Numer. Linear Algebra Appl.},
+volume = {3},
+pages = {221--237},
+year = {1996},
+}
+
+@article{Nabben_Szyld_2007,
+author = {Nabben, R. and Szyld, D. B.},
+title = {{Schwarz} Iterations for Symmetric Positive Semidefinite Problems},
+journal = simax,
+volume = {29},
+pages = {98-116},
+year = {2007},
+}
+
+@article{Dong_Liu_Wen_Yuan_2015,
+title = {A parallel line search subspace correction method for composite convex optimization},
+author = {Dong, Q. and Liu, X. and Wen, Z. and Yuan, Y.},
+journal = {J. Oper. Res. Soc. China},
+volume = {3},
+pages = {163--187},
+year = {2015},
+}
+
+@article{Frommer_1989,
+title = {Parallel nonlinear multisplitting methods},
+author = {Frommer, A.},
+journal = nmath,
+volume = {56},
+pages = {269--282},
+year = {1989},
+}
+
+@book{Kelley_1995,
+title = {Iterative Methods for Linear and Nonlinear Equations},
+author = {Kelley, C. T.},
+year = {1995},
+publisher = {SIAM},
+address = {Philadelphia}
+}
+
+@book{Kelley_1999,
+title = {Iterative Methods for Optimization},
+author = {Kelley, C. T.},
+year = {1999},
+publisher = {SIAM},
+address = {Philadelphia}
+}
+
+@article{OLeary_White_1985,
+title = {Multi-splittings of matrices and parallel solution of linear systems},
+author = {{O'Leary}, D. P. and White, R. E.},
+journal = {SIAM J. Alg. Disc. Meth.},
+volume = {6},
+pages = {630--640},
+year = {1985},
+}
+
+@incollection{Cai_2003,
+title = {Overlapping domain decomposition methods},
+author = {Cai, X.-C.},
+booktitle = {Advanced Topics in Computational Partial
+Differential Equations: Numerical Methods and Diffpack Programming},
+editor = {Langtangen, H. P. and Tveito, A.},
+pages = {57--95},
+year = {2003},
+publisher = {Springer},
+address = {Berlin},
+}
+
+@incollection{Jacob_Obozinski_Vert_2009,
+author = {Jacob, L. and Obozinski, G. and Vert, J.-P.},
+title = {Group Lasso with Overlap and Graph Lasso},
+booktitle = {Proceedings of the 26th Annual International Conference on Machine Learning},
+year = {2009},
+editor = {Bottou, L. and Littman, M.},
+pages = {433--440},
+publisher = {ACM},
+address = {New York},
+}
+
+@article{Martins_Lambe_2013,
+title = {Multidisciplinary design optimization: a survey of architectures},
+author = {Martins, J. and Lambe, A.},
+journal = {AIAA Journal},
+volume = {51},
+pages = {2049--2075},
+year = {2013},
+}
+
+@incollection{Toint_1981,
+title = {Towards an efficient sparsity exploiting {Newton} method for minimization},
+author = {Toint, Ph. L.},
+editor = {Duff, I. S.},
+booktitle = {Sparse Matrices and Their Uses},
+pages = {57-88},
+year = {1981},
+publisher = {Academic Press},
+address = {London},
+}
+
+}
+@article{Chan_Mathew_1994,
+title = {Domain decomposition algorithms},
+author = {Chan, T. F. and Mathew, T. P.},
+journal = actan,
+volume = {3},
+pages = {61--143},
+year = {1994},
+publisher = {Cambridge University Press}
+}
+
+@incollection{Dryja_Widlund_1989,
+title = {Towards a unified theory of domain decomposition algorithms for elliptic problems},
+author = {Dryja, M. and Widlund, O. B.},
+year = {1990},
+editor = {Chan, T. F. and Glowinski, R. and  Periaux,
+J. and  Wildlund, O. B.},
+booktitle = {Proceedings of the Third International Symposium on Domain Decomposition Methods for Partial Differential, Houston, Texas, March 20-22, 1989},
+publisher = {SIAM},
+}
+
+@article{Percival_2012,
+author = {Percival, D.},
+journal = {Electron. J. Statist.},
+pages = {269--288},
+title = {Theoretical properties of the overlapping groups lasso},
+volume = {6},
+year = {2012}
+}
+
+@incollection{Yuan_Liu_Ye_2011,
+title = {Efficient methods for overlapping group lasso},
+author = {Yuan, L. and Liu, J. and Ye, J.},
+booktitle = {Advances in Neural Information Processing Systems},
+pages = {352--360},
+year = {2011}
+}
+
+@incollection{Widlund_2009,
+title = {The development of coarse spaces for domain decomposition algorithms},
+author = {Widlund, O. B.},
+booktitle = {Domain Decomposition Methods in Science and Engineering XVIII},
+editor = {Bercovier, M. and Gander, M. J. and Kornhuber, R. and Widlund,
+O. B.}, 
+pages = {241--248},
+year = {2009},
+publisher = {Springer}
+}
+
+@incollection{Mandel_Sousedik_2011, 
+title = {Coarse spaces over the ages},
+author = {Mandel, J. and Soused{\'\i}k, B.},
+booktitle = {Domain decomposition Methods in Science and Engineering XIX},
+editor = {Huang, Y. and Kornhuber, R. and Widlund, O. B. and Xu, J.},
+pages = {213--220},
+year = {2011},
+publisher = {Springer}
+}
+
+@article{Reed_Dongarra_2015,
+title = {Exascale computing and big data},
+author = {Reed, D. A. and Dongarra, J.},
+journal = cacm,
+volume = {58},
+pages = {56--68},
+year = {2015},
+}
+
+@article{Schwarz_1870,
+author = {Schwarz, H. A.},
+title = {{\"U}ber einen {G}renz{\"u}bergang durch alternierendes {V}erfahren},
+journal = {{V}ierteljahrsschrift der {N}aturforschenden {G}esellschaft in {Z}{\"u}rich},
+year = {1870},
+volume = {15},
+pages = {272--286},
+}
+
+@article{Jacobi_1845,
+author = {Jacobi, C. G. J.},
+title = {\"{U}ber eine neue {A}ufl\"{o}sungsart der bei der {M}ethode
+der kleinsten {Q}uadrate vorkommenden linearen {G}leichungen},
+journal = {{A}stronomische {N}achrichten},
+volume = {22},
+year = {1845},
+pages = {297--306}
+}
+
+@article{Dong_etal_2015,
+title = {A parallel line search subspace correction method for composite convex optimization},
+author = {Dong, Q. and Liu, X. and Wen, Z. and Yuan, Y.},
+journal = {J. Oper. Res. Soc. China}, 
+volume = {3},
+pages = {163--187},
+year = {2015},
+}
+
+@article{Wright_2015,
+title = {Coordinate descent algorithms},
+author = {Wright, S.},
+journal = mprog,
+volume = {151},
+pages = {3--34},
+year = {2015},
+}
+
+@article{Richtarik_Takac_2016,
+title = {Parallel coordinate descent methods for big data optimization},
+author = {Richt{\'a}rik, P. and Tak{\'a}{\v{c}}, M.},
+journal = mprog,
+volume = {156},
+pages = {433--484},
+year = {2016},
+}
+
+@article{Peng_Xu_Yan_Yin_2016,
+title = {{ARock}: An algorithmic framework for asynchronous parallel coordinate updates},
+author = {Peng, Z. and Xu, Y. and Yan, M. and Yin, W.},
+journal = sisc,
+volume = {38},
+pages = {A2851--A2879},
+year = {2016},
+}
+
+@incollection{Seide_etal_2014,
+title = {1-bit stochastic gradient descent and its application to data-parallel distributed training of speech {DNNS}},
+author = {Seide, F. and Fu, H. and Droppo, J. and Li, G. and Yu, D.},
+editor = {Li, H. and Meng, H. and Ma, B. and Chng, E. and Xie, L.},
+booktitle = {Fifteenth Annual Conference of the International Speech Communication Association},
+publisher = {{ISCA}},
+year = {2014}
+}
+
+@incollection{Gupta_etal_2015,
+title = {Deep learning with limited numerical precision},
+editor = {Bach, F. and Blei, D.},
+author = {Gupta, S. and Agrawal, A. and Gopalakrishnan, K. and Narayanan, P.},
+booktitle = {Proceedings of the 32nd International Conference on Machine Learning},
+pages = {1737--1746},
+year = {2015},
+publisher = {PMLR},
+}
+
+@incollection{Alistarh_2017,
+title = {{QSGD}: Communication-efficient {SGD} via gradient quantization and encoding},
+author = {Alistarh, D. and Grubic, D. and Li, J. and Tomioka, R. and Vojnovic, M.},
+booktitle = {Proceedings of the 30th International Conference on Neural Information Processing Systems},
+editor = {Guyon, I. and Luxburg, U. and Bengio, S. and Wallach, H. and Fergus, R. and Vishwanathan, S. and Garnett, R.},
+publisher = {Curran Associates, Inc.},
+pages = {1709--1720},
+year = {2017}
+}
+
+@article{Gorbunov_Hanzely_Richrarik_2019,
+title = {A Unified Theory of {SGD}: Variance Reduction, Sampling, Quantization and Coordinate Descent},
+author = {Gorbunov, E. and Hanzely, F. and Richt{\'a}rik, P.},
+journal = {arXiv:1905.11261},
+year = {2019}
+}
+
+@incollection{Wang_etal_2018,
+title = {Training Deep Neural Networks with 8-bit Floating Point Numbers}, 
+author = {Wang, N. and Choi, J. and Brand, D. and  Chen, C.-Y. and Gopalakrishnan. K.},
+booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+editor = {Bengio, S. and Wallach, H. and Larochelle, H. and Grauman, K. and Cesa-Bianchi, N. and Garnett, R.},
+publisher = {Curran Associates, Inc.}, 
+pages = {7675--7684},
+year = {2018}
+}
+
+@article{Hopkins_etal_2019,
+title = {Stochastic rounding and reduced-precision fixed-point
+arithmetic for solving neural {ODE}s},
+author = {Hopkins, M. and Mikaitis, M. and Lester, D. R. and Furber, S.},
+journal = {arXiv:1904.11263},
+year = {2019}
+}
+
+@article{Cartis_Scheinberg_2018,
+title = {Global convergence rate analysis of unconstrained optimization methods based on probabilistic models},
+author = {Cartis, C. and Scheinberg, K.},
+journal = mprog,
+volume = {169},
+pages = {337--375},
+year = {2018},
+}
+
+@article{dAspremontA_2008,
+title = {Smooth optimization with approximate gradient},
+author = {d'Aspremont, A.},
+journal = siopt,
+volume = {19},
+pages = {1171--1183},
+year = {2008},
+}
+
+@article{NedicA_BertsekasDP_2010,
+title = {The effect of deterministic noise in subgradient methods},
+author = {Nedi{\'c}, A. and Bertsekas, D. P.},
+journal = mprog,
+volume = {125},
+pages = {75-99},
+year = {2010},
+}
+
+@article{DevolderO_GlineurF_NesterovY_2014,
+title = {First-order methods of smooth convex optimization with inexact oracle},
+author = {Devolder, O. and Glineur, F. and Nesterov, Yu.},
+journal = mprog,
+volume = {146},
+pages = {37--75},
+year = {2014},
+}
+
+@article{Herzog_Kunish_2010,
+title = {Algorithms for {PDE}-constrained optimization},
+author = {Herzog, R. and Kunisch, K.},
+journal = {GAMM-Mitt.},
+volume = {33},
+pages = {163--176},
+year = {2010},
+publisher = {Wiley Online Library}
+}
+
+@incollection{Biegler_etal_2003,
+title = {Large-scale {PDE}-constrained optimization: an introduction},
+author = {Biegler, L. T. and Ghattas, O. and Heinkenschloss, M. and van Bloemen Waanders, B.},
+editor = {Biegler, L. T. and Ghattas, O. and Heinkenschloss, M. and van Bloemen Waanders, B.},
+booktitle = {Large-Scale {PDE}-Constrained Optimization},
+pages = {3--13},
+year = {2003},
+publisher = {Springer}
+}
+
+@incollection{Chen_etal_2018,
+title = {Neural ordinary differential equations},
+author = {Chen, T. Q. and Rubanova, Y. and Bettencourt, J. and Duvenaud, D. K.},
+pages = {6571--6583},
+booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+editor = {Bengio, S. and Wallach, H. and Larochelle, H. and Grauman, K. and Cesa-Bianchi, N. and Garnett, R.},
+publisher = {Curran Associates, Inc.}, 
+year = {2018}
+}
+
+@book{DelosReyes_2015,
+title = {Numerical {PDE}-Constrained Optimization},
+author = {De los Reyes, J. C.},
+year = {2015},
+publisher = {Springer},
+address = {Berlin}
+}
+
+@book{Hinze_etal_2009,
+title = {Optimization with {PDE} Constraints},
+author = {Hinze, M. and Pinnau, R. and Ulbrich, M. and Ulbrich, S.},
+year = {2009},
+publisher = {Springer},
+address = {Berline},
+}
+
+@incollection{Kennedy_Martins_2013,
+title = {An adjoint-based derivative evaluation method for time-dependent aeroelastic optimization of flexible aircraft},
+author = {Kennedy, G. and Martins, J.},
+booktitle = {Proceedings of The 54th AIAA/ASME/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference},
+pages = {{AIAA} 2013-1530},
+year = {2013}
+}
+
+@article{Martins_Alonso_Reuther_2005,
+title = {A coupled-adjoint sensitivity analysis method for high-fidelity aero-structural design},
+author = {Martins, J. R. R. A. and Alonso, J. J. and Reuther, J. J.},
+journal = opteng,
+volume = {6},
+pages = {33--62},
+year = {2005},
+}
+
+@article{Gratton_Toint_2018,
+title = {A note on solving nonlinear optimization problems in variable precision},
+author = {Gratton, S. and Toint, Ph. L.},
+journal = {arXiv:1812.03467},
+year = {2018}
+}
+
+@incollection{Ge_etal_2015,
+title = {Escaping from saddle points --- online stochastic gradient for tensor decomposition},
+author = {Ge, R. and Huang, F. and Jin, C. and Yuan, Y.},
+editor = {Gr\"unwald, P. and Hazan, E. and Kale, S.},
+booktitle = {Proceedings of The 28th Conference on Learning Theory},
+pages = {797--842},
+year = {2015},
+publisher = {PMLR}
+}
+
+@incollection{Jin_etal_2017,
+author = {Jin, C. and Ge, R. and Netrapalli, P. and Kakade, Sham M. and Jordan, M. I.},
+title = {How to Escape Saddle Points Efficiently},
+editor = {Precup, D. and Teh, Y. W.},
+booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+year = {2017},
+pages = {1724--1732},
+publisher = {JMLR},
+} 
+
+@article{Wang_Yuan_2019,
+title = {Stochastic Trust Region Methods with Trust Region Radius Depending on Probabilistic Models},
+author = {Wang, X. and Yuan, Y.},
+journal = {arXiv:1904.03342},
+year = {2019}
+}
+
+@article{Yuan_Stoer_1995,
+title = {A subspace study on conjugate gradient algorithms},
+author = {Yuan, Y. and Stoer, J.},
+journal = {ZAMM Z. Angew. Math. Mech.},
+volume = {75},
+pages = {69--77},
+year = {1995},
+}
+
+@incollection{Gander_Halpern_Repiquet_2014,
+title = {A new coarse grid correction for {RAS/AS}},
+author = {Gander, M. J. and Halpern, L. and Repiquet, K. S.},
+editor = {Erhel, J. and Gander, M. J. and Halpern, L. and
+Pichot, G. and Sassi, T. and Widlund, O. B.},
+booktitle = {Domain Decomposition Methods in Science and Engineering XXI},
+pages = {275--283},
+year = {2014},
+publisher = {Springer}
+}
+
+@article{Gander_Loneland_Rahman_2015,
+title = {Analysis of a New Harmonically Enriched Multiscale Coarse
+Space for Domain Decomposition Methods},
+author = {Gander, M. J. and Loneland, A. and Rahman, T.},
+journal = {arXiv:1512.05285},
+year = {2015}
+}
+
+@incollection{Gander_Loneland_2017,
+title = {{SHEM}: An optimal coarse space for {RAS} and its multiscale approximation},
+author = {Gander, M. J. and Loneland, A.},
+booktitle = {Domain Decomposition Methods in Science and Engineering XXIII},
+editor = {Lee, C.-O. and Cai, X.-C. and Keyes, D. E. and Kim, H. and Klawonn, A. and Park, E.-J. and Widlund, O. B.},
+pages = {313--321},
+year = {2017},
+publisher = {Springer},
+address = {Berlin}
+}
+
+@incollection{Gander_Song_2017,
+title = {Complete, optimal and optimized coarse spaces for {Additive Schwarz}},
+author = {Gander, M. J. and Song, B.},
+editor = {Bj{\o}rstad, P. E. and Brenner, S. C. and
+Halpern, L. and Kim, H. and Kornhuber, R. and Rahman, T. and
+Widlund, O. B.},
+booktitle = {Domain Decomposition Methods in Science and Engineering XXIV},
+pages = {301--309},
+year = {2017},
+publisher = {Springer}
+}
+
+@incollection{Powell_2006,
+title = {The {NEWUOA} software for unconstrained optimization without derivatives},
+author = {Powell, M. J. D.},
+booktitle = {Large-scale nonlinear optimization},
+editor = { Di Pillo, G. and Roma, M.},
+pages = {255--297},
+year = {2006},
+publisher = {Springer},
+address = {Boston}
+}
+
+@incollection{Griewank_Toint_1982,
+author = {Griewank, A. and Toint, Ph. L.},
+title = {On the unconstrained optimization of partially separable functions},
+booktitle = {Nonlinear Optimization 1981},
+editor = {Powell, M. J. D.},
+publisher = {Academic Press}, 
+address = {London},
+pages = {119--137},
+year = {1982}
+}
+
+@article{Chen_Toint_Wang_2019,
+title = {Partially separable convexly-constrained optimization with non-{L}ipschitzian singularities and its complexity},
+author = {Chen, X. and Toint, Ph. L. and Wang, H.},
+journal = siopt, 
+volume = {29},
+pages = {874-903}, 
+year = {2019}
+}
+
+@article{Bandler_etal_1994,
+title = {Space mapping technique for electromagnetic optimization},
+author = {Bandler, J. W. and Biernacki, R. M. and Chen, S. H. and
+Grobelny, P. A. and Hemmers, R. H.},
+journal = itmtt,
+volume = {42},
+pages = {2536--2544},
+year = {1994},
+}
+
+@article{Bandler_etal_1995,
+title = {Electromagnetic optimization exploiting aggressive space mapping},
+author = {Bandler, J. W. and Biernacki, R. M. and Chen, S. H. and Hemmers, R. H. and Madsen, K.},
+journal = itmtt,
+volume = {43},
+pages = {2874--2882},
+year = {1995},
+}
+
+@article{Bakr_etal_1998,
+title = {A trust region aggressive space mapping algorithm for {EM} optimization},
+author = {Bakr, M. H. and Bandler, J. W. and Biernacki, R. M. and Chen, S. H. and Madsen, K.},
+journal = itmtt,
+volume = {46},
+pages = {2412--2425},
+year = {1998},
+}
+
+@article{Bakr_etal_2000,
+title = {Review of the space mapping approach to engineering optimization and modeling},
+author = {Bakr, M. H. and Bandler, J. W. and Madsen, K. and S{\o}ndergaard, J.},
+journal = opteng,
+volume = {1},
+pages = {241--276},
+year = {2000},
+}
+
+@article{Bakr_etal_2001,
+title = {An introduction to the space mapping technique},
+author = {Bakr, M. H. and Bandler, J. W. and Madsen, K. and S{\o}ndergaard, J.},
+journal = opteng,
+volume = {2},
+pages = {369--384},
+year = {2001},
+}
+
+@article{Bandler_etal_2004,
+author = {{Bandler}, J. W. and {Cheng}, Q. S. and {Dakroury}, S. A.
+and {Mohamed}, A. S. and {Bakr}, M. H. and {Madsen}, K. and
+{Sondergaard}, J.},
+title = {Space mapping: the state of the art},
+journal = itmtt,
+year = {2004},
+volume = {52},
+pages = {337-361},
+}
+
+@article{Koziel_Bandler_Madsen_2006,
+author = {{Koziel}, S. and {Bandler}, J. W. and {Madsen}, K.},
+journal = itmtt,
+title = {A Space-Mapping Framework for Engineering Optimization --- Theory and Implementation},
+year = {2006},
+volume = {54},
+pages = {3721-3730},
+}
+
+@article{Koziel_Cheng_Bandler_2008,
+author = {{Koziel}, S. and {Cheng}, Q. S. and {Bandler}, J. W.},
+title = {Space mapping},
+journal = itmtt,
+year = {2008},
+volume = {9},
+pages = {105-122},
+}
+
+@article{Koziel_Bandler_Cheng_2010,
+title = {Robust trust-region space-mapping algorithms for microwave design optimization},
+author = {Koziel, S. and Bandler, J. W. and Cheng, Q. S.},
+journal = itmtt,
+volume = {58},
+pages = {2166--2174},
+year = {2010},
+}
+
+@article{Rayas_2016,
+author = {{Rayas-Sanchez}, J. E.},
+title = {Power in Simplicity with {ASM}: Tracing the Aggressive Space Mapping Algorithm Over Two Decades of Development and Engineering Applications},
+journal = {IEEE Microw. Mag.},
+year = {2016},
+volume = {17},
+pages = {64-76},
+}
+
+@article{Bandler_2018,
+title = {Space Mapping --- Have You Ever Wondered About the Engineer's
+Mysterious ``Feel'' for a Problem?},
+author = {Bandler, J. W.},
+journal = {IEEE Microw. Mag.},
+volume = {19},
+pages = {112--122},
+year = {2018},
+}
+
+@article{Robinson_Eldred_Willcox_Haimes_2008,
+title = {Surrogate-based optimization using multifidelity models with variable parameterization and corrected space mapping},
+author = {Robinson, T. D. and Eldred, M. S. and Willcox, K. E. and Haimes, R.},
+journal = {{AIAA} J.},
+volume = {46},
+pages = {2814--2822},
+year = {2008}
+}
+
+@article{Peherstorfer_Willcox_Gunzburger_2018,
+title = {Survey of multifidelity methods in uncertainty propagation, inference, and optimization},
+author = {Peherstorfer, B. and Willcox, K. and Gunzburger, M.},
+journal = sirev,
+volume = {60},
+pages = {550--591},
+year = {2018},
+}
+
+@article{Bhosekar_Ierapetritou_2018,
+title = {Advances in surrogate based modeling, feasibility analysis, and optimization: A review},
+author = {Bhosekar, A. and Ierapetritou, M.},
+journal = {Computers \& Chemical Engineering},
+volume = {108},
+pages = {250--267},
+year = {2018},
+}
+
+@phdthesis{Sondergaard_2003,
+title = {Optimization using surrogate models --- by the space mapping technique},
+author = {S{\o}ndergaard, J.},
+year = {2003},
+school = {Technical University of Denmark},
+address = {Denmark}
+}
+
+@incollection{Koziel_Ciaurri_Leifsson_2011,
+author = {Koziel, S. and Ciaurri, D. E. and Leifsson, L.},
+editor = {Koziel, S. and Yang, X.},
+title = {Surrogate-Based Methods},
+booktitle = {Computational Optimization, Methods and Algorithms},
+year = {2011},
+publisher = {Springer},
+address = {Berlin},
+pages = {33--59},
+}
+
+@article{Vicente_2003,
+title = {Space mapping: Models, sensitivities, and trust-regions methods},
+author = {Vicente, L. N.},
+journal = opteng,
+volume = {4},
+pages = {159--175},
+year = {2003},
+}
+
+@article{Alexandrov_Dennis_etal_1998,
+title = {A trust-region framework for managing the use of approximation models in optimization},
+author = {Alexandrov, N. M. and Dennis, Jr. J. E. and Lewis, R. M.  and Torczon, V.},
+journal = {Struct. Optim.},
+volume = {15},
+pages = {16--23},
+year = {1998},
+}
+
+@Article{Booker_Dennis_etal_1999,
+author = {Booker, A. J. and Dennis, Jr., J. E. and Frank, P. D.  and Serafini, D. B.  and Torczon, V.  and Trosset, M. W.},
+title = {A rigorous framework for optimization of expensive functions by surrogates},
+journal = {Struct. Optim.},
+year = {1999},
+volume = {17},
+pages = {1--13},
+}
+
+@article{Pilanci_Wainwright_2017,
+title = {{Newton} sketch: A near linear-time optimization algorithm with linear-quadratic convergence},
+author = {Pilanci, M. and Wainwright, M. J.},
+journal = siopt,
+volume = {27},
+pages = {205--245},
+year = {2017},
+}
+
+@article{Douglas_1927,
+title = {A method of numerical solution of the problem of {P}lateau},
+author = {Douglas, J.},
+journal = annals,
+volume = {29},
+pages = {180--188},
+year = {1927},
+}
+
+@article{Rado_1930,
+author = {Rad\'o, T.},
+journal = annals,
+pages = {457--469},
+title = {On {P}lateau's Problem},
+volume = {31},
+year = {1930}
+}
+
+@article{Douglas_1931,
+title = {Solution of the problem of {P}lateau},
+author = {Douglas, J.},
+journal = tams,
+volume = {33},
+pages = {263--321},
+year = {1931},
+}
+
+@incollection{Harrison_Pugh_2016,
+author = {Harrison, J. and Pugh, H.},
+editor = {Nash, Jr., J. F. and Rassias, M. Th.},
+title = {{P}lateau's Problem},
+booktitle = {Open Problems in Mathematics},
+year = {2016},
+publisher = {Springer},
+address = {Cham},
+pages = {273--302},
+}
+
+@article{Traasdahl_Ronquist_2011,
+title = {High order numerical approximation of minimal surfaces},
+author = {Tr{\aa}sdahl, {\O}. and R{\o}nquist, E. M.},
+journal = jcp,
+volume = {230},
+pages = {4795--4810},
+year = {2011},
+}
+
+@article{Cecil_2005,
+title = {A numerical method for computing minimal surfaces in arbitrary dimension},
+author = {Cecil, Th.},
+journal = jcp,
+volume = {206},
+pages = {650--660},
+year = {2005},
+}
+
+@article{Nocedal_1980,
+title = {Updating quasi-{N}ewton matrices with limited storage},
+author = {Nocedal, J.},
+journal = mathcomput,
+volume = {35},
+pages = {773--782},
+year = {1980}
+}
+
+@article{More_Wild_2011,
+title = {Estimating computational noise},
+author = {Mor{\'e}, J. J. and Wild, S. M.},
+journal = sisc,
+volume = {33},
+pages = {1292--1314},
+year = {2011},
+}
+
+@article{Goldberg_1991,
+title = {What every computer scientist should know about floating-point arithmetic},
+author = {Goldberg, D.},
+journal = {ACM Comput. Surv.},
+volume = {23},
+pages = {5--48},
+year = {1991},
+}
+
+@InProceedings{Botto_2010,
+author = {Bottou, L.},
+editor = {Lechevallier, Y. and Saporta, G.},
+title = {Large-Scale Machine Learning with Stochastic Gradient Descent},
+booktitle = {Proceedings of COMPSTAT'2010},
+year = {2010},
+publisher = {Physica-Verlag},
+address = {Heidelberg},
+pages = {177--186},
+}
+
+@article{Robbins_Monro_1951,
+title = {A stochastic approximation method},
+author = {Robbins, H. and Monro, S.},
+volume = {22},
+journal = astat,
+pages = {400--407},
+year = {1951},
+}
+
+@article{Kalamkar_etal_2019,
+title = {A Study of {BFLOAT16} for Deep Learning Training},
+journal = {arXiv:1905.12322},
+author = {Kalamkar, D. and others},
+year = {2019}
+}
+
+@article{Absil_Baker_Gallivan_2007,
+author = {Absil, P.-A. and Baker, C. G. and Gallivan, K. A.},
+title = {Trust-Region Methods on {Riemannian} Manifolds},
+journal = fcm,
+year = {2007},
+volume = {7},
+pages = {303--330},
+}
+
+@article{Beck_Teboulle_2009,
+title = {A fast iterative shrinkage-thresholding algorithm for linear inverse problems},
+author = {Beck, A. and Teboulle, M.},
+journal = siis,
+volume = {2},
+pages = {183--202},
+year = {2009},
+}
+
+@incollection{Schulman_etal_2015,
+title = {Trust region policy optimization},
+year = {2015},
+author = {Schulman, J. and Levine, S. and Abbeel, P. and Jordan, M. and Moritz, Ph.},
+booktitle = {Proceedings of the 32nd International Conference on International Conference on Machine Learning},
+publisher = {PMLR},
+pages = {1889--1897},
+}
+
+@incollection{Wu_etal_2017,
+title = {Scalable trust-region method for deep reinforcement learning using {K}ronecker-factored approximation},
+author = {Wu, Y. and Mansimov, E. and Grosse, R. and Liao, S. and Ba, J.},
+pages = {5279--5288},
+year = {2017},
+booktitle = {Proceedings of the 30th International Conference on Neural Information Processing Systems},
+editor = {Guyon, I. and Luxburg, U. and Bengio, S. and Wallach, H. and Fergus, R. and Vishwanathan, S. and Garnett, R.},
+publisher = {Curran Associates, Inc.},
+}
+
+@article{Meier_etal_2008,
+title = {The group lasso for logistic regression},
+author = {Meier, L. and Van De Geer, S. and B{\"u}hlmann, P.},
+journal = jrssb,
+volume = {70},
+pages = {53--71},
+year = {2008},
+}
+
+@incollection{Gander_2017,
+title = {On the Origins of Linear and Non-linear Preconditioning},
+author = {Gander, M. J.},
+booktitle = {Domain Decomposition Methods in Science and Engineering XXIII},
+editor = {Lee, C.-O. and Cai, X.-C. and Keyes, D. E. and Kim, H. and Klawonn, A. and Park, E.-J. and Widlund, O. B.},
+pages = {153--161},
+year = {2017},
+publisher = {Springer},
+address = {Berlin}
+}
+
+@article{Dolean_Gander_Kheriji_Kwok_Masson_2016,
+title = {Nonlinear Preconditioning: How to use a Nonlinear {Schwarz} Method to Precondition {Newton's} Method}, 
+author = {Dolean, V. and Gander, M. J. and  Kheriji, W. and Kwok, F. and Masson, R.}, 
+journal = sisc,
+volume = {38},
+pages = {A3357--A3380},
+year = {2016},
+}
+
+@Article{Toint_Tuyttens_1990,
+author = {Toint, Ph. L.  and Tuyttens, D.},
+title = {On large scale nonlinear Network optimization},
+journal = mprog,
+year = {1990},
+volume = {48},
+pages = {125--159},
+}
+
+@article{Cartis_Gould_Toint_2012a,
+title = {Complexity bounds for second-order optimality in unconstrained optimization},
+journal = {J. Complexity},
+volume = {28},
+pages = {93 - 108},
+year = {2012},
+author = {Cartis, C. and Gould, N. I. M. Toint, Ph. L.},
+}
+
+@InProceedings{Yao_etal_2019,
+author = {Yao, Z. and Gholami, A. and Xu, P. and Keutzer, K. and Mahoney, M. W.},
+title = {Trust Region Based Adversarial Attack on Neural Networks},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition},
+year = {2019}
+}
+
+@article{Conn_Gould_Sartenaer_Toint_1996,
+title = {Convergence properties of minimization algorithms for convex constraints using a structured trust region},
+author = {Conn, A. R. and Gould, N. I. M. and Sartenaer, A. and Toint, Ph. L.},
+journal = siopt,
+volume = {6},
+pages = {1059--1086},
+year = {1996},
+}
+
+@article{Xu_etal_2018,
+title = {Second-Order Optimization for Non-Convex Machine Learning:
+An Empirical Study},
+author = {Xu, P. and  Roosta-Khorasani, F. and  Mahoney, M. W.},
+journal = {arXiv:1708.07827},
+year = {2018},
+}
+
+@article{Chen_Toint_2019,
+title = {High-Order Evaluation Complexity for Convexly-Constrained
+Optimization with Non-{Lipschitzian} Group Sparsity Terms},
+author = {Chen, X. and Toint, Ph. L.},
+year = {2019},
+journal = {arXiv:1902.10767}
+}
+
+@book{Lie_2019,
+title = {An introduction to reservoir simulation using {MATLAB/GNU Octave}},
+author = {Lie, K.-A.},
+year = {2019},
+publisher = {Cambridge University Press},
+address = {Cambridge}
+}
+
+@book{Eaton_2017,
+author = {Eaton, J. W.},
+title = {{GNU Octave} 4.2 Reference Manual},
+year = {2017},
+publisher = {Samurai Media Limited},
+address = {United Kingdom},
+} 
+
+@Article{Powell_1978,
+author = {Powell, M. J. D.},
+title = {Algorithms for nonlinear constraints that use {L}agrangian functions},
+journal = mprog,
+year = {1978},
+volume = {14},
+pages = {224--248},
+}
+
+@article{Curtis_Robinson_Samadi_2017,
+title = {A trust region algorithm with a worst-case iteration complexity of $\mathcal{O}(\epsilon^{-3/2})$ for nonconvex optimization},
+author = {Curtis, F. E. and Robinson, D. P. and Samadi, M.},
+journal = mprog,
+volume = {162},
+pages = {1--32},
+year = {2017},
+}
+
+@article{Curtis_Lubberts_Robinson_2018,
+title = {Concise complexity analyses for trust region methods},
+author = {Curtis, F. E. and Lubberts, Z. and Robinson, D. P.},
+journal = optl,
+volume = {12},
+pages = {1713--1724},
+year = {2018},
+}
+
+@techreport{Curtis_Robinson_2018,
+title = {Regional Complexity Analysis of Algorithms for Nonconvex Smooth Optimization},
+author = {Curtis, F. E. and Robinson, D. P.},
+institution = {Department of Industrial and Systems Engineering, Lehigh University},
+address = {Lehigh},
+number = {COR@L Technical Report 18T-003-R1},
+year = {2018},
+}
+
+@article{Curtis_Robinson_Samadi_2018,
+author = {Curtis, F. E. and Robinson, D. P. and Samadi, M.},
+title = {An inexact regularized Newton framework with a worst-case iteration complexity of $\mathcal{O}(\epsilon^{-3/2})$ for nonconvex optimization},
+journal = imana,
+volume = {39},
+pages = {1296-1327},
+year = {2018},
+}
+
+@article{Hough_Meza_2002,
+title = {A class of trust-region methods for parallel optimization},
+author = {Hough, P. D. and Meza, J. C.},
+journal = siopt,
+volume = {13},
+pages = {264--282},
+year = {2002},
+}
+
+@article{Borzi_Schulz_2009,
+title = {Multigrid methods for {PDE} optimization},
+author = {Borz{\`i}, A. and Schulz, V.},
+journal = sirev,
+volume = {51},
+pages = {361--395},
+year = {2009},
+}
+
+@article{Heidel_Schulz_2018,
+title = {A {R}iemannian trust-region method for low-rank tensor completion},
+author = {Heidel, G. and Schulz, V.},
+journal = nlaa,
+volume = {25},
+pages = {e2175},
+year = {2018},
+}
+
+@book{Borzi_Schulz_2011,
+author = {Borz\`i, A. and Schulz, V.},
+title = {Computational Optimization of Systems Governed by Partial Differential Equations},
+publisher = {SIAM},
+year = {2011},
+series = cse,
+address = {Philadelphia},
+}
+
+@article{Higham_1999,
+title = {Trust region algorithms and timestep selection},
+author = {Higham, D. J.},
+journal = sinum,
+volume = {37},
+pages = {194--210},
+year = {1999},
+}
+
+@article{Higham_Higham_2019,
+title = {Deep Learning: An Introduction for Applied Mathematicians},
+author = {Higham, C. F. and Higham, D. J.},
+journal = sirev,
+year = {to appear}
+}
+
+@article{Wathen_2015, 
+title = {Preconditioning}, 
+volume = {24},
+journal = actan,
+author = {Wathen, A. J.},
+year = {2015}, 
+pages = {329–376}
+}
+
+@article{Powell_2010,
+title = {On the convergence of a wide range of trust region methods for unconstrained optimization},
+author = {Powell, M. J. D.},
+journal = imana,
+volume = {30},
+pages = {289--301},
+year = {2010},
+}
+
+
+
+@article{Berahas_Byrd_Nocedal_2019,
+title = {Derivative-free optimization of noisy functions via quasi-{N}ewton methods},
+author = {Berahas, A. S. and Byrd, R. H. and Nocedal, J.},
+journal = siopt,
+volume = {29},
+pages = {965--993},
+year = {2019},
+}
+
+@article{Cartis_Gould_Toint_2012b,
+title = {On the oracle complexity of first-order and derivative-free algorithms for smooth nonconvex minimization},
+author = {Cartis, C. and Gould, N. I. M. and Toint, Ph. L.},
+journal = siopt,
+volume = {22},
+pages = {66--86},
+year = {2012},
+}
+
+@article{Yuan_2000b,
+title = {On the truncated conjugate gradient method},
+author = {Yuan, Y.},
+journal = mprog,
+volume = {87},
+pages = {561--573},
+year = {2000},
+}
+
+@article{More_Wild_2014,
+title = {Do you trust derivatives or differences?},
+author = {Mor{\'e}, J. J. and Wild, S. M.},
+journal = jcp,
+volume = {273},
+pages = {268--277},
+year = {2014},
+}
+
+@article{More_Wild_2012,
+title = {Estimating derivatives of noisy simulations},
+author = {Mor{\'e}, J. J. and Wild, S. M.},
+journal = toms,
+volume = {38},
+pages = {19:1-19:21},
+year = {2012},
+}
+
+@article{Carson_Higham_2018,
+title = {Accelerating the solution of linear systems by iterative refinement in three precisions},
+author = {Carson, E. and Higham, N. J.},
+journal = sisc,
+volume = {40},
+pages = {A817--A847},
+year = {2018},
+}
+
+@article{Dongarra_etal_2018,
+title = {The Singular Value Decomposition: Anatomy of Optimizing an
+Algorithm for Extreme Scale},
+author = {Dongarra, J. and Gates, M. and Haidar, A. and Kurzak, J.
+and Luszczek, P. and Tomov, S. and Yamazaki, I.},
+journal = sirev,
+volume = {60},
+pages = {808--865},
+year = {2018},
+}
+
+@article{Burdakov_Gong_Zikrin_Yuan_2017,
+title = {On efficiently combining limited-memory and trust-region techniques},
+author = {Burdakov, O. and Gong, L. and Zikrin, S. and Yuan, Y.},
+journal = mprogc,
+volume = {9},
+pages = {101-134},
+year = {2017},
+}
+
+@article{Zhao_Li_Wen_2019,
+title = {A Stochastic Trust-Region Framework for Policy Optimization},
+author = {M. Zhao and Y. Li and Z. Wen},
+year = {2019},
+journal = {arXiv:1911.11640},
+}
+
+@book{Bauschke_Combettes_2011,
+title = {Convex Analysis and Monotone Operator Theory in {H}ilbert Spaces},
+author = {Bauschke, H. H. and Combettes, P. L.},
+year = {2011},
+address = {New York},
+publisher = {Springer}
+}
+
+@article{Dunn_1976,
+title = {Convexity, monotonicity, and gradient processes in {Hilbert} space},
+author = {Dunn, J. C.},
+journal = jmaa,
+volume = {53},
+pages = {145--158},
+year = {1976},
+}
+
+@techreport{Carter_1989,
+title = {Numerical optimization in {H}ilbert space using inexact function and gradient evaluations},
+author = {Carter, R. G.},
+number = {ICASE Report No.\ 89-45},
+institution = {Institute for Computer Applications in Science and
+Engineering, NASA Langley Research Center, Hampton, Virginia},
+year = {1989}
+}
+
+@article{Golomb_1935,
+title = {Zur {T}heorie der nichtlinearen {I}ntegralgleichungen,
+{I}ntegralgleichungssysteme und allgemeinen {F}unktionalgleichungen},
+author = {Golomb, M.},
+year = {1935},
+journal = {Math. Z.},
+volume = {39},
+pages = {45-75}
+}
+
+@article{Rothe_1946,
+title = {Gradient mappings in {H}ilbert space},
+author = {Rothe, E. H.},
+journal = annals,
+volume = {47},
+pages = {580--592},
+year = {1946},
+}
+
+@article{Golomb_Tapia_1972,
+title = {The metric gradient in normed linear spaces},
+author = {Golomb, M. and Tapia, R. A.},
+journal = nmath,
+volume = {20},
+pages = {115--124},
+year = {1972},
+}
+
+@article{Horvath_etal_2019,
+title = {Natural compression for distributed deep learning},
+author = {Horvath, S. and Ho, C.-Y. and Horvath, L. and
+Sahu, A. and Canini, M. and Richt\'arik, P.},
+journal = {arXiv:1905.10988},
+year = {2019}
+}
+
+@article{Kolda_Lewis_Torczon_2003,
+author = {T. G. Kolda and R. M. Lewis and V. Torczon},
+title = {Optimization by direct search:~{N}ew perspectives on some classical
+and modern methods},
+journal = sirev,
+volume = {45},
+pages = {385--482},
+year = {2003}
+}
+
+@article{More_Wild_2009,
+title = {Benchmarking derivative-free optimization algorithms},
+author = {Mor{\'e}, J. J. and Wild, S. M.},
+journal = siopt,
+volume = {20},
+pages = {172--191},
+year = {2009},
+}
+
+@article{Dolan_More_2002,
+title = {Benchmarking optimization software with performance profiles},
+author = {Dolan, E. D. and Mor{\'e}, J. J.},
+journal = mprog,
+volume = {91},
+pages = {201--213},
+year = {2002},
+}
+
+@incollection{Nocedal_Yuan_1998,
+author = {Nocedal, J. and Yuan, Y.},
+editor = {Yuan, Y.},
+title = {Combining Trust Region and Line Search Techniques},
+booktitle = {Advances in Nonlinear Programming: Proceedings of the 96' International Conference on Nonlinear Programming},
+year = {1998},
+publisher = {Springer US},
+address = {Boston, MA},
+pages = {153--175},
+}
+
+@article {Asi_Duchi_2019,
+author = {Asi, H. and Duchi, J. C.},
+title = {The importance of better models in stochastic optimization},
+volume = {116},
+pages = {22924--22930},
+year = {2019},
+journal =  pnas,
+}
+
+
+@book{Zalinescu_2002,
+  title={Convex Analysis in General Vector Spaces},
+  author={Z\u{a}linescu, C.},
+  year={2002},
+  publisher={World scientific},
+  address={Singapore}
+}
+
+@book{Narici_Beckenstein_2010,
+  title={Topological Vector Spaces},
+  author={Narici, L. and Beckenstein, E.},
+  series={Chapman \& Hall/CRC Pure Appl. Math.},
+  year={2010},
+  edition={Second},
+  address={Boca Raton, FL},
+  publisher={CRC Press}
+}
+
+@book{Munkres_2000,
+  title = {Topology},
+  author = {Munkres, J. R.},
+  edition = {Second},
+  year = {2000},
+  publisher = {Prentice Hall, Inc.},
+  address = {Upper Saddle River, NJ}
+}

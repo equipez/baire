@@ -1,0 +1,719 @@
+\documentclass[11pt,a4paper]{article}
+%\documentclass[11pt,a4paper,draft]{article}
+
+\voffset=-1.5cm \hoffset=-1.4cm \textwidth=16cm \textheight=22.0cm
+
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{empheq}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage[bbgreekl]{mathbbol}
+\DeclareSymbolFontAlphabet{\mathbbm}{bbold}
+\DeclareSymbolFontAlphabet{\mathbb}{AMSb}
+\usepackage{bbm}
+\usepackage{url}
+\usepackage{rotating}
+\usepackage{eqlist}
+
+% graph, tikz and pgf
+%\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{tikz,tikzscale,pgf,pgfarrows,pgfnodes,filecontents,tikz-cd,}
+\usetikzlibrary{arrows,arrows.meta,patterns,positioning,decorations.markings,shapes}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage[justification=centering]{caption}
+\usepgfplotslibrary{fillbetween}
+\pgfplotsset{compat=1.11}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{accents}
+\usepackage{xspace}
+\usepackage{silence}
+\WarningFilter{latex}{Writing or overwriting file} % Mute the warning about 'writing/overwriting file'
+\WarningFilter{latex}{Writing file} % Mute the warning about 'writing/overwriting file'
+\WarningFilter{latex}{Tab has} % Mute the warning about 'Tab has been converted to Blank Space'
+\usepackage[normalem]{ulem}
+\usepackage[toc,page]{appendix}
+\renewcommand{\appendixpagename}{\Large{Appendix}}
+\renewcommand{\appendixname}{Appendix}
+\renewcommand{\appendixtocname}{Appendix}
+%\usepackage{sectsty}
+\usepackage{multirow,booktabs}
+\usepackage{enumitem}
+\usepackage{upgreek}
+\setlist[itemize]{leftmargin=*}
+
+%\usepackage[nobottomtitles*]{titlesec} % No section title at the bottom of pages
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{darkblue}{rgb}{0,0.1,0.5}
+\definecolor{darkgreen}{rgb}{0,0.5,0.1}
+\usepackage{hyperref}
+\hypersetup{ colorlinks,%
+linkcolor=darkblue,%
+anchorcolor=darkblue,
+citecolor=darkblue,%
+urlcolor=darkblue}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{refcheck} % Check unused labels
+
+\usepackage[section]{algorithm}
+\usepackage{algpseudocode,algorithmicx}
+\newcommand{\INPUT}{\textbf{Input}}
+\newcommand{\FOR}{\textbf{For}~}
+\algrenewcommand\algorithmicrequire{\textbf{Input:}}
+\algrenewcommand\algorithmicensure{\textbf{Output:}}
+\algrenewcommand\alglinenumber[1]{\normalsize #1.}
+\newcommand*\Let[2]{\State #1 $=$ #2}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{acknowledgement}{Acknowledgement}[section]
+\newtheorem{alg}{Algorithm}[section]
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{case}{Case}[section]
+\newtheorem{claim}{Claim}[section]
+\newtheorem{conclusion}{Conclusion}[section]
+\newtheorem{condition}{Condition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{criterion}{Criterion}[section]
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{notation}{Notation}[section]
+\newtheorem{problem}{Problem}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{solution}{Solution}[section]
+\newtheorem{assumption}{Assumption}[section]
+\newtheorem{summary}{Summary}[section]
+\newtheorem{note}{Note}[section]
+\newtheorem{doubt}{Doubt}[section]
+\newtheorem{properties}{Properties}[section]
+\newtheorem{example}{Example}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+% Prevent footnote from running to the next page
+\interfootnotelinepenalty=10000
+% No line break in inline math
+\interdisplaylinepenalty=10000
+\relpenalty=10000
+\binoppenalty=10000
+% No widow or orphan lines
+%\clubpenalty = 10000
+%\widowpenalty = 10000
+%\displaywidowpenalty = 10000
+
+\usepackage{xpatch}
+\xpatchcmd{\proof}{\itshape}{\normalfont\proofnamefont}{}{}
+\newcommand{\proofnamefont}{\bfseries}
+
+\usepackage{nccmath,relsize}
+\DeclareMathOperator*{\mcap}{\mathsmaller{\bigcap}}
+\DeclareMathOperator*{\mcup}{\mathsmaller{\bigcup}}
+%\renewcommand{\cap}{\mathsmaller{\bigcap}}
+%\renewcommand{\cap}{\mcap}
+
+\setlength{\unitlength}{1mm}
+
+\def\real{\mathbb{R}}
+\def\SS{\mathbb{S}}
+\def\ZZ{\mathbb{Z}}
+\def\NN{\mathbb{N}}
+\def\KK{\mathbb{K}}
+\newcommand{\sss}[1]{{\scriptscriptstyle{#1}}}
+\newcommand{\sups}[1]{{#1}}
+\renewcommand{\top}{{\scriptstyle{\mathsf{T}}}}
+
+\DeclareMathOperator{\sort}{sort}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\med}{med}
+\newcommand{\co}{{\mathrm{c}}}
+\newcommand{\rank}{\mathrm{rank}}
+\newcommand{\range}{\mathrm{range}}
+\newcommand{\ind}[2]{\operatorname{\mathbbm{1}}\;\!\!\!\big(#2\in#1\big)}
+\newcommand{\diag}{\operatorname*{diag}}
+\newcommand{\Diag}{\operatorname*{Diag}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\Pred}{\mathrm{Pred}}
+\newcommand{\cs}{\text{c}}
+\newcommand{\hp}{\circ}
+\newcommand{\card}{{\rm card}}
+\newcommand{\fr}{\operatorname{fr}}
+\newcommand{\sg}[1]{\bf { #1 }}
+\newcommand{\ceil}[1]{ {\lceil{#1}\rceil} }
+\newcommand{\floor}[1]{ {\lfloor{#1}\rfloor} }
+%\renewcommand{\emph}{\textbf}
+%\newcommand{\ones}{\mathbbm{1}}
+\newcommand{\ones}{1}
+\newcommand{\cc}{\sss{\textnormal{C}}}
+\newcommand{\dec}{\sss{\textnormal{D}}}
+\newcommand{\cauchy}{\sss{\textnormal{C}}}
+\newcommand{\scauchy}{\sss{\textnormal{S}}}
+\newcommand{\etc}{{etc.}}
+\newcommand{\ie}{{i.e.}}
+\newcommand{\eg}{{e.g.}}
+\newcommand{\etal}{{et al.}}
+\newcommand{\st}{\textnormal{s.t.}}
+\newcommand{\me}{\mathrm{e}}
+\newcommand{\md}{\mathrm{d}}
+\newcommand{\lev}{\mathrm{lev}}
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bx}{\mathbf{u}}
+%\newcommand{\bb}{\mathbf{f}}
+\newcommand{\bb}{\mathbf{r}}
+\newcommand{\nov}{n_{\textnormal{o}}}
+\newcommand{\MATLAB}{\textsc{Matlab}\xspace}
+\newcommand{\rpss}{{SS}}
+\newcommand{\rdfs}{{DF}}
+\newcommand{\pfs}{{FS}}
+\newcommand{\cg}{{CG}}
+\newcommand{\hem}{{HEM}}
+\newcommand{\prblm}{\texttt}
+\DeclareMathAlphabet{\mathsfit}{T1}{\sfdefault}{\mddefault}{\sldefault}
+\SetMathAlphabet{\mathsfit}{bold}{T1}{\sfdefault}{\bfdefault}{\sldefault}
+\newcommand{\prbb}{\mathsfit{p}}
+\newcommand{\pp}{\mathsf{p}}
+\newcommand{\qq}{\mathsf{q}}
+\newcommand{\ttt}{\mathsfit{t}}
+\newcommand{\tol}{\varepsilon}
+\newcommand{\bt}{\mathbf{t}}
+\newcommand{\br}{\mathbf{r}}
+\newcommand{\dd}{\mathbf{d}}
+\newcommand{\ii}{\mathbf{i}}
+\newcommand{\jj}{\mathbf{j}}
+\newcommand{\xx}{\mathbf{x}}
+\renewcommand{\pp}{\mathbf{p}}
+\renewcommand{\ggg}{\mathbf{g}}
+\newcommand{\GG}{\mathbf{G}}
+\renewcommand{\Pr}{\mathbb{P}}
+\newcommand{\iid}{\text{i.i.d.}}
+\newcommand{\integer}{\textrm{I}}
+\newcommand{\octave}{\mbox{GNU Octave}\xspace}
+\newcommand{\gradp}{\nabla_{\!\sss{P_k}}}
+
+% mathlcal font
+\DeclareFontFamily{U}{dutchcal}{\skewchar\font=45 }
+\DeclareFontShape{U}{dutchcal}{m}{n}{<-> s*[1.0] dutchcal-r}{}
+\DeclareFontShape{U}{dutchcal}{b}{n}{<-> s*[1.0] dutchcal-b}{}
+\DeclareMathAlphabet{\mathlcal}{U}{dutchcal}{m}{n}
+\SetMathAlphabet{\mathlcal}{bold}{U}{dutchcal}{b}{n}
+
+% mathscr font (supporting lowercase letters)
+%\usepackage[scr=dutchcal]{mathalfa}
+%\usepackage[scr=esstix]{mathalfa}
+%\usepackage[scr=boondox]{mathalfa}
+%\usepackage[scr=boondoxo]{mathalfa}
+\usepackage[scr=boondoxupr]{mathalfa}
+%\newcommand{\model}{\mathscr{h}}
+\newcommand{\model}{\mathbf{h}}
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\TT}{\mathbf{T}}
+
+
+\DeclareMathOperator{\inter}{int}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\vol}{vol}
+\newcommand{\Set}[1]{\mathcal{#1}}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it} % The mathpzc font
+\newcommand{\slv}{\mathpzc} 
+% mathpzc looks great, but it stops working on 19 Feb 2020 for no reason. 
+%\newcommand{\slv}{\mathscr}
+\newcommand{\software}{\texttt}
+\DeclareMathOperator{\eff}{\mathsf{e}\;\!}
+\DeclareMathOperator{\Eff}{\mathsf{E}\;\!}
+\newcommand{\out}{{\text{out}}}
+
+\numberwithin{equation}{section}
+\setcounter{tocdepth}{2}
+
+\DeclareMathOperator{\comp}{C}
+\DeclareMathOperator{\sign}{sign}
+
+\newcommand{\REPHRASE}[1]{{\color{blue}{#1}}}
+\newcommand{\TYPO}[1]{{\color{orange}{#1}}}
+\newcommand{\MISTAKE}[1]{{\color{violet}{#1}}}
+\newcommand{\REVISION}[1]{{\color{blue}{#1}}}
+\newcommand{\REVISIONred}[1]{{\color{red}{#1}}}
+%\newcommand{\COMMENT}[1]{\textcolor{darkgreen}{(#1)}}
+%\newcommand{\REVISION}[1]{#1}
+%\newcommand{\REVISIONred}[1]{#1}
+  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Notes on Baire's Category Theory}
+\date{November 14, 2020 (revised on \today)}
+\author{
+Z. Zhang
+\thanks{
+Department of Applied Mathematics, The Hong Kong Polytechnic
+University, Hong Kong, China ({\tt zaikun.zhang@polyu.edu.hk}).
+}
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Basics}
+
+\begin{definition}
+  \label{def:intcl}
+  Let~$X$ be a topological space and~$S$ be a set in~$X$. 
+  \begin{enumerate}
+    \item The interior of~$S$ is defined as~$\inter(S) = \bigcup\{U \mathrel{:} U\subset S \text{ and } U \text{ is open in } X\}$. 
+    \item The closure of~$S$ is defined as~$\cl(S) = \bigcap\{G \mathrel{:} G\supset S \text{ and } G \text{ is closed in } X\}$. 
+  \end{enumerate}
+\end{definition}
+
+
+\begin{proposition}
+  \label{prop:intcl}
+  Let~$A$ and~$B$ be two sets in a topological space~$X$. 
+  \begin{enumerate}
+    \item Duality between interior and closure: $\inter(A) = \cl(A^\co)^\co$, $\cl(A)=\inter(A^\co)^\co$.
+    \item For any~$x\in X$, $x\in \inter(A)$ if and only if there exists an open set~$U$ such that~$x\in U \subset A$. 
+    \item For any~$x\in X$, $x\in \cl(A)$ if and only if $U\cap A \neq \emptyset$ for any open set~$U$ such that~$x\in U$.
+    \item $\inter(A\cap B) = \inter(A)\cap \inter(B)$.
+      %, $\inter(A\cup B)\supset \inter(A)\cup \inter(B)$.
+      %; if~$A$ is closed and~$\inter(B) = \emptyset$, then~$\inter(A\cup B) = \inter(A)$. 
+    \item $\cl(A\cup B) = \cl(A)\cup \cl(B)$. 
+      %, $\cl(A\cap B) \subset \cl(A)\cap \cl(B)$.
+      %; if~$A$ is open and~$\cl(B) = X$, then~$\cl(A\cap B) = \cl(A)$.
+    \end{enumerate}
+\end{proposition}
+
+\begin{proposition}
+  \label{prop:subintcl}
+  Let~$X$ be a topological space and~$Y$ be its subspace
+  \begin{enumerate}
+    \item For any~$S\subset Y$, $\inter_Y(S) \supset \inter_X(S)$;
+      if~$Y$ is open in~$X$, then $\inter_Y(S)=\inter_X(S)$.
+    \item For any~$S\subset Y$, $\cl_Y(S) = \cl_X(S) \cap Y$. 
+  \end{enumerate}
+\end{proposition}
+
+In Proposition~\ref{prop:subintcl}, we use a subscript to indicate the topological space which the
+interior or closure is defined with respect to. We will always do this if the context does not
+suffice to avoid confusion. 
+
+\begin{proof}
+  1. $\inter_X(S)$ is open in~$X$ and~$\inter_X(S)\subset S\subset Y$. Thus~$\inter_X(S)$ is an open
+     subset of~$S$ in~$Y$, leading to~$\inter_X(S)\subset \inter_Y(S)$. If~$Y$ is open,
+     then~$\inter_Y(S)$ is an open subset of~$S$ in~$X$, implying that~$\inter_Y(S)\subset
+     \inter_X(S)$ and hence~$\inter_Y(S) = \inter_X(S)$. 
+
+  2. %First,~$\cl_X(S)\cap Y$ is a closed set in~$Y$ and it contains~$S$. 
+     Since $\cl_Y(S)$ is closed in~$Y$, there exists a closed set~$G$ in~$X$ such
+     that~$\cl_Y(S)= G\cap Y$. Thus~$S\subset  G$, implying that~$\cl_X(S) \subset G$.
+     Therefore,~$\cl_X(S)\cap Y \subset G\cap Y = \cl_Y(S)$.  On the other hand,~$\cl_X(S)\cap Y$ is
+     a closed set in~$Y$ and it contains~$S$, implying that~$\cl_X(S)\cap Y \supset \cl_Y(S)$.
+     Hence~$\cl_X(S)\cap Y = \cl_Y(S)$.
+\end{proof}
+
+\begin{definition}
+  \label{def:dense}
+  %Let~$A$ and~$B$ be two sets in a topological space~$X$ such that~$A\subset B$. If~$\cl(A) \supset B$, then~$A$ is said to be dense in~$B$. 
+  Let~$A$ and~$B$ be two sets in a topological space~$X$
+  \begin{enumerate}
+    \item If~$\cl(A) = X$, then~$A$ is said to be dense in~$X$. 
+    \item If~$A\subset B$ and~$A$ is dense in~$B$ with respect to the subspace topology on $B$, 
+    then we will simply say that~$A$ is dense in~$B$.  
+  \end{enumerate}
+\end{definition}
+
+\begin{proposition}
+  \label{prop:densein}
+  Let~$A$ and~$B$ be two sets in a topological space~$X$ such that~$A\subset B$. Then~$A$ is dense
+  in~$B$ if and only if~$\cl(A) \supset B$.
+\end{proposition}
+
+\begin{proof}
+  $A$ is dense in~$B$ $\Leftrightarrow $ $\cl_B(A) = B$ $\Leftrightarrow$ $\cl(A)\cap B = B$
+  $\Leftrightarrow$ $\cl(A) \supset B$. 
+\end{proof}
+
+\begin{proposition}
+  \label{prop:dense}
+  Let~$A$ and~$B$ be two sets in a topological space~$X$. 
+  \begin{enumerate}
+    \item $A\subset \cl(B)$ if and only if~$\inter(B^\co ) \subset \inter(A^\co)$.
+    \item $A \subset \cl(B)$ if and only if~$U\cap B \neq \emptyset$ for any open
+      set~$U$ such that~$U \cap  A \neq \emptyset$ 
+      %(\ie, any neighborhood of any point in~$A$ has a nonempty intersection with~$B$).  
+    \item \label{it:open} If~$A$ is open, then $A\subset \cl(B)$ if and only if $U\cap B \neq \emptyset$ for any
+    nonempty open set~$U\subset A$.
+  \item If~$A\subset \cl(B)$, then $A\cap U \subset \cl(B\cap U)$ for any open set~$U$.
+   %\item If~$A$ is dense in~$B$, then~$A\cap U$ is dense in~$B\cap U$ for any open set~$U$.  
+   \item \label{it:dense}If $A$ is open and~$A\subset \cl(B)$, then~$A\cap B$ is dense in~$A$.
+   %  , \ie, $A \subset \cl(A\cap B)$.
+   \item \label{it:intcl} $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$.
+  \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+1. $A\subset \cl(B)$ $\Leftrightarrow$ $(\cl(B))^\co \subset A^\co $ 
+$\Leftrightarrow$ $\inter(B^\co)  \subset A^\co$
+$\Leftrightarrow$ $\inter(B^\co)  \subset \inter(A^\co)$.
+
+2. Suppose that~$A\subset \cl(B)$. For any open set~$U$ such that~$U\cap A\neq \emptyset$, we
+   have~$U\cap \cl(B)\neq \emptyset$, and hence~$U\cap B\neq \emptyset$. 
+   If~$A\not\subset \cl(B)$, then~$U=(\cl(B))^\co$ is an open set such that~$U\cap A \neq \emptyset$
+   while~$U\cap B = \emptyset$. 
+
+3. Suppose that~$A\subset \cl(B)$. For any nonempty open set~$U\subset A$, we have~$U\cap A = U\neq \emptyset$, 
+   and hence~$U\cap B\neq \emptyset$. 
+   If~$A\not\subset \cl(B)$, then~$U=A\cap (\cl(B))^\co$ is a nonempty open set such that~$U\subset A$  
+   while~$U\cap B = \emptyset$. 
+
+4. Since~$A \subset \cl(B)$, for any open set~$V$ such that~$A\cap U\cap V\neq \emptyset$, we have
+   according to~3 that~$B\cap U\cap V\neq \emptyset$. This implies~$A\cap U \subset \cl(B\cap U)$
+   according to~3.  
+
+5. According to~4, $A = A\cap A \subset \cl(A\cap B)$ since~$A$ is open.
+
+6. Since~$\inter(\cl(A))$ is open, and~$\inter(\cl(A)) \subset \cl(A)$, we know from 5 that 
+$\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$. 
+\end{proof}
+
+\section{Cantor's theorem and its consequences}
+
+\begin{theorem}[Cantor's theorem] 
+  \label{th:cantor}
+  Let~$X$ be a topological space, and~$\{C_n\}$ be a sequence of
+  closed sets such that~$C_{n+1}\subset C_n$ for each~$n\ge 1$. 
+\begin{enumerate}
+  \item If~$X$ is complete metric space and~$\diam(C_n)\to 0$, then~$\bigcap_{n=1}^\infty C_n$ is
+    a singleton.
+  \item If each~$C_n$ is compact, then~$\bigcap_{n=1}^\infty C_n$ is nonempty.
+\end{enumerate}
+\end{theorem}
+
+
+\begin{theorem}[{\cite[Theorems~1.4.5--1.4.6]{Zalinescu_2002}}]
+  \label{th:intclcm}
+  Let~$X$ be a complete metric space and $\{S_n\}_{n=1}^\infty$ be a sequence of sets in~$X$. 
+  \begin{enumerate}
+    \item If each~$S_n$ is open, then $\cl(\bigcap_{n=1}^\infty S_n)$ and~$\bigcap_{n=1}^\infty \cl(S_n)$ have the same interior. 
+%      that is $\inter (\cl(\bigcap_{n=1}^\infty S_n)) = \inter(\bigcap_{n=1}^\infty \cl(S_n))$. 
+    \item If each~$S_n$ is closed, then $\inter(\bigcup_{n=1}^\infty S_n)$ and~$\bigcup_{n=1}^\infty \inter(S_n)$ have the same closure. 
+%      that is  $\cl (\inter(\bigcup_{n=1}^\infty S_n)) = \cl(\bigcup_{n=1}^\infty \inter(S_n))$.
+  \end{enumerate}
+\end{theorem}
+
+\begin{proof}
+  Due to the duality between closure and interior, we only prove~$1$, for which it suffices to show that 
+  $\inter(\bigcap_{n=1}^\infty \cl(S_n))\subset \cl(\bigcap_{n=1}^\infty S_n)$.
+  By item~\ref{it:open} of Proposition~\ref{prop:dense}, we only need to prove for a given
+  nonempty open set~$U \subset \bigcap_{n=1}^\infty \cl(S_n)$ that%
+  \begin{equation}
+    \label{eq:usnonempty}
+    U\mcap\left(\mcap_{n=1}^\infty S_n\right) \neq \emptyset. 
+  \end{equation}
+  To this end, we will define a sequence of closed balls~$\{B_n\}_{n=0}^\infty$~such~that% 
+  \begin{equation}
+    \label{eq:nest}
+  0< \diam(B_n)< 2^{-n},
+  \quad 
+  B_{n+1} \subset B_{n} \subset  U\mcap\left(\mcap_{k=1}^n S_k\right)
+  \quad \text{ for each } \quad  n \ge 0, 
+  \end{equation}
+  where $\bigcap_{k=1}^0 S_k=X$. 
+  We obtain~\eqref{eq:usnonempty} once this is done, as
+  Cantor's theorem will yield
+    \begin{equation}
+      \label{eq:nestnonempty}
+      \emptyset \;\neq \;\mcap_{n=1}^\infty B_n \;\subset\; U\mcap \left(\mcap_{n=1}^\infty
+      S_n\right).
+    \end{equation}
+
+    We define $\{B_n\}$ inductively. 
+    As~$U$ is a nonempty open set, we can take a closed ball~$B_0\subset U$ 
+    such that~$0<\diam(B_0)< 1$.
+    Assume that the closed ball~$B_n$ is already defined for an~$n\ge 0$ 
+    so that~$0<\diam(B_n)< 2^{-n}$ and~$B_n\subset U\cap(\bigcap_{k=1}^n S_k)$.
+    Recalling that~$U\subset\cl(S_{n+1})$, 
+    we have~$\inter(B_n)\subset \cl(S_{n+1})$, which implies that~$\inter(B_n) \cap S_{n+1} \neq
+    \emptyset$. Since~$\inter(B_n)\cap S_{n+1}$ is open, we  
+    can take a closed ball~$B_{n+1}\subset \inter(B_n)\cap S_{n+1}$ such that~$0<\diam(B_{n+1})< 2^{-(n+1)}$.  
+    It is easy to see that~$B_{n+1}\subset B_n$ and 
+    %$B_{n+1}\subset B_{n}\cap S_{n+1} \subset [U\cap (\bigcap_{k=1}^n S_{k})]\cap S_{n+1} = U\cap(\bigcap_{k=1}^{n+1} S_k)$. 
+    $B_{n+1}\subset B_{n}\cap S_{n+1} \subset U\cap(\bigcap_{k=1}^{n+1} S_k)$. 
+     This finishes the induction and completes the proof.
+\end{proof}
+
+\begin{theorem}
+  \label{th:intcllch} Theorem~\ref{th:intclcm} still holds if~$X$ is a locally compact Hausdorff
+  space. 
+\end{theorem}
+
+\begin{proof}
+  The proof duplicates that of Theorem~\ref{th:intclcm}, except that~$\{B_n\}$ is now a sequence of
+  compact sets with nonempty interior such that 
+  $B_{n+1} \subset B_n \subset U \cap (\bigcap_{k=1}^n S_k)$, the existence of which can be
+ established by the local compactness of~$X$.  Since~$X$ is a Hausdorff space, each~$B_n$ is closed,
+ and hence~$\bigcap_{n=1}^\infty B_n$ is nonempty by Cantor's theorem. 
+\end{proof}
+
+\section{Baire's category theorem}
+
+\begin{definition}
+Let~$X$ be a topological space. 
+\begin{enumerate}
+  \item A set in~$X$ is said to be rare (or \emph{nowhere dense}) if its closure has empty interior.  
+  \item A set in~$X$ is said to be meager if it is a countable union of rare sets.
+  \item The complement of a meager set is called a comeager (or \emph{residual}) set.
+  \item A meager set is also said to be of the first category; other sets are  
+    of the second category.
+\end{enumerate}
+\end{definition}
+
+
+\begin{proposition}
+ Rare sets, subsets of meager sets, and countable unions of meager sets are all meager sets. 
+\end{proposition}
+
+
+\begin{definition}
+  A topological space~$X$ is called a Baire space if every meager set in~$X$ has empty interior.
+\end{definition}
+
+\begin{proposition} 
+   Let~$X$ be a topological space. The following statements are equivalent.  
+  \begin{enumerate}
+    \item $X$ is a Baire space.
+    \item Any comeager set in~$X$ is dense.
+    \item Any nonempty open set in~$X$ is not meager.
+    \item Any countable intersection of dense open sets in~$X$ is still dense.
+    \item Any countable union of rare closed sets in~$X$ has empty interior.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}~
+
+  1 $\Rightarrow$ 2. 
+  Let~$S$ be a comeager set in~$X$. Then~$S^\co$ is a meager
+  set in~$X$. Thus~$S$ has empty interior, which implies that~$S$ is dense in~$X$. 
+
+  2 $\Rightarrow$ 3. 
+  Let~$U$ be an open set in~$X$.
+  If~$U$ is meager, then~$U^\co$ is dense in~$X$. Thus~$U=\!\inter(U) \!= \emptyset$.
+
+  3 $\Rightarrow$ 4. 
+  Let~$\{U_n\}$ be a sequence of dense open sets in~$X$. Then~$(\bigcap_{n=1}^\infty U_n)^\co$ is
+  meager. Its interior is an open meager set in~$X$, and hence empty. Thus~$\bigcap_{n=1}^\infty
+  U_n$  is dense. 
+
+  4 $\Rightarrow$ 5. 
+  Let~$\{C_n\}$ be a sequence of rare closed sets in~$X$. Then~$\{C_n^\co\}$ is a seqeunce
+  of dense open sets. Thus~$\bigcap_{n=1}^\infty C_n^\co$ is dense in~$X$. Taking the complement, we
+  know that~$\bigcup_{n=1}^\infty C_n$ has empty interior.   
+
+  5 $\Rightarrow$ 1. 
+  Let~$S$ be a meager set in~$X$. Then there exists a sequence of rare sets~$\{S_n\}$ such that 
+  $S=\bigcup_{n=1}^\infty S_n$. Thus~$S\subset \bigcup_{n=1}^\infty \cl(S_n)$, the latter of which has
+  empty interior because~$\{\cl(S_n)\}$ is a sequence of rare closed sets. 
+  Hence~$S$ has empty interior. 
+\end{proof}
+
+\begin{proposition}
+  \label{prop:intclr}
+  Let~$X$ be a topological space and~$S$ be a set in~$X$. Then~$S$ is rare in~$X$ if and only
+  if~$\inter(\cl(S)) \cap S = \emptyset$.
+\end{proposition}
+
+\begin{proof}
+  By item~\ref{it:intcl} of Proposition~\ref{prop:dense}, $\inter(\cl(S)) \cap S$ is dense
+  in~$\inter(\cl(S))$. Thus $\inter(\cl(S)) = \emptyset$ if and only if $\inter(\cl(S)) \cap S = \emptyset$.
+\end{proof}
+
+\begin{lemma}
+  \label{lem:openb}
+  Let~$X$ be a topological space, $Y$ be its open subspace, and~$S$ be a subset of~$Y$. 
+  \begin{enumerate}
+    \item $S$ is rare in $X$ if and only if~$S$ is rare in~$Y$.
+    \item $S$ is meager in $X$ if and only if~$S$ is meager in~$Y$.
+  \end{enumerate}
+\end{lemma}
+
+\begin{proof} 
+  1. Since~$Y$ is open in~$X$, we have
+ \begin{equation}
+   \label{eq:subrare}
+     \inter_Y(\cl_Y(S)) = \inter_X(\cl_Y(S)) \;=\; \inter_X(\cl_X(S)\cap Y) = \inter_X(\cl_X(S))\cap Y.
+ \end{equation}
+   If~$S$ is rare in~$X$, then~$\inter_X(\cl_X(S))=\emptyset$, and hence~$\inter_Y(\cl_Y(S))
+   = \emptyset$ by~\eqref{eq:subrare}, 
+   implying that~$S$ is rare in~$Y$. 
+   If~$S$ is rare in~$Y$, then~\eqref{eq:subrare} leads
+   to~$\inter_{X}(\cl_X(S))\cap Y = \emptyset$, which implies~$\inter_X(\cl_X(S))\cap
+   S = \emptyset$,  ensuring that~$S$ is rare in~$X$ by Proposition~\ref{prop:intclr}.
+\end{proof}
+
+
+\begin{theorem}
+  \label{th:intcl}
+   Let~$X$ be a topological space. The following statements are equivalent.  
+   \begin{enumerate}
+     \item $X$ is a Baire space.
+     \item Any open subspace of~$X$ is a Baire space. 
+     \item For any sequence~$\{S_n\}$ of open sets in~$X$, $\cl(\bigcap_{n=1}^\infty S_n)$ and
+       $\bigcap_{n=1}^\infty \cl(S_n)$ have the same interior. 
+     \item For any sequence~$\{S_n\}$ of closed sets in~$X$, $\inter(\bigcup_{n=1}^\infty S_n)$ and
+       $\bigcup_{n=1}^\infty \inter(S_n)$ have the same closure. 
+   \end{enumerate}
+\end{theorem}
+
+\begin{proof}~
+
+  1 $\Rightarrow$ 2. Let~$Y$ be an open subspace of~$X$, and~$S$ be a meager set in~$Y$.
+  Then~$S$ is meager in~$X$ by Lemma~\ref{lem:openb}. Since~$X$ is a Baire space,~$S$ has empty interior in~$X$, which
+  implies that~$S$ has empty interior in~$Y$. Hence~$Y$ is a Baire space. 
+
+  2 $\Rightarrow$ 3. It suffices to prove that~$\inter(\bigcap_{n=1}^\infty \cl(S_n))\subset\cl(\bigcap_{n=1}^\infty S_n)$. 
+  Let~$Y=\inter(\bigcap_{n=1}^\infty \cl(S_n))$. Then~$Y$ is a Baire space. 
+  Define $T_n = S_n\cap Y$ for each~$n\ge 1$. Then each~$T_n$ is open in~$Y$. Since~$Y$ is open
+  and~$Y\subset \cl(S_n)$, we know from item~\ref{it:dense} of Proposition~\ref{prop:dense}
+  that~$T_n$ is dense in~$Y$. Hence~$\bigcap_{n=1}^\infty T_n$
+  is dense in~$Y$. Therefore, $Y \subset \cl(\bigcap_{n=1}^\infty T_n) \subset
+  \cl(\bigcap_{n=1}^\infty S_n)$ as desired. 
+
+  3 $\Rightarrow$ 4. Obvious by the duality between interior and closure. 
+
+  4 $\Rightarrow$ 5. Let~$\{S_n\}$ be a sequence of closed sets in~$X$ with empty interior. Then we
+    have
+  $\cl(\inter(\bigcup_{n=1}^\infty S_n)) = \cl(\bigcup_{n=1}^\infty \inter(S_n)) = \emptyset$.
+  Thus~$\inter(\bigcup_{n=1}^\infty S_n) = \emptyset$. Hence~$X$ is a Baire space. 
+\end{proof}
+
+
+\begin{theorem}[Baire's Category Theorem, {\cite[Theorem~48.2]{Munkres_2000}}]
+  \label{th:Baire}
+  Complete metric spaces and locally compact Hausdorff spaces are Baire spaces.
+\end{theorem}
+
+
+\section{Baire's category in topological vector spaces}
+
+\begin{definition}
+ A topological vector space $X$ is a vector space over a topological field $\KK$ (most often the
+ real or complex numbers with their standard topologies) that is endowed with a topology such that
+ the vector addition $(x,y)\mapsto x+y$ and scalar multiplication $(\lambda, x) \mapsto \lambda x$ are continuous functions, where the domains of these
+ functions are endowed with product topologies.
+\end{definition}
+
+\begin{proposition}
+  Suppose that~$X$ be a topological vector space and~$U$ is a neighborhood of~$0$.
+  Then~$X=\bigcup_{n=1}^\infty (nU)$. 
+\end{proposition}
+
+\begin{proof}
+  For any~$x\in X$, $n^{-1} x\to 0$ due to the continuity of the scalar multiplication. 
+  Since~$U$ is a neighborhood of~$0$,
+  $n^{-1} x$ falls inside~$U$ when~$n$ is sufficiently large, which implies~$x\in n U$.
+\end{proof}
+
+\begin{theorem}[{\cite[Theorem~11.6.7]{Narici_Beckenstein_2010}}]
+  If~$X$ is a topological vector space, then~$X$ is a Baire space if and only if it is not meager. 
+\end{theorem}
+
+\begin{proof}
+ If~$X$ is a Baire space, then it is not meager as an open subset of itself.  If~$X$ is not a Baire
+ space, then there exists a nonempty open set~$U$ that is meager. Take~$x\in U$ and set~$V=U-x$.
+ Then~$V$ is a meager neighborhood of~$0$. Thus~$X=\bigcup_{n=1}^\infty (nV)$ is meager. 
+\end{proof}
+
+\section{Examples}
+
+\begin{proposition}
+  Let~$f\mathrel{:} (0,+\infty)\to \real$ be a continuous function. If~$\lim_{n\to \infty}f(nx) = 0$ 
+   for all~$x>0$, then~$\lim_{x\to +\infty} f(x) = 0$.
+\end{proposition}
+
+\begin{proof} We give two proofs. 
+
+  1. Proof by Cantor's theorem. Assume that~$f(x)\nrightarrow 0$ when~$x\to +\infty$. Then there
+     exists a constant~$\epsilon > 0$ such that there exists~$x \ge M$ with~$|f(x)|>\epsilon$
+     for any~$M > 0$. 
+     We will define 
+     a strictly increasing sequence of integers~$\{n_k\}$ and
+     a decreasing nested sequence of closed intervals~$\{[a_k, b_k]\}$
+     such that~$b_k>a_k > 0$ and 
+     \begin{equation}
+       |f(n_kx)| > \epsilon \quad \text{for all}\quad x \in [a_k, b_k] \quad \text{and}\quad   k\ge 1.
+     \end{equation}
+     Once this is done, then there exists~$y\in\bigcap_{k=1}^\infty [a_k, b_k]$, and~$f(n_ky)> \epsilon$ for each~$k\ge 1$, contradicting the assumption. 
+
+     We define the aforementioned~$\{[a_k,b_k]\}$ and~$\{n_k\}$ inductively.
+     Let~$n_1=1$. By the continuity of~$f$, there exists an interval~$[a_1, b_1]$ such
+     that~$b_1>a_1>0$ and~$f(n_1x)> \epsilon$ for all~$x\in [a_1, b_1]$. Assume that~$n_k$
+     and~$[a_k, b_k]$ has been defined for a~$k\ge 1$ so that~$b_k>a_k >0$. Note that there exists
+     $M>0$ such that
+     \begin{equation}
+       \label{eq:union}
+       [M, +\infty) \subset \mcup_{n> n_k} n[a_k, b_k].
+     \end{equation}
+     Take $a \ge  M$ such that~$|f(a)|> \epsilon$. By the continuity of~$f$, there exists
+     $b>a$ such that~$|f(x)|>\epsilon$ for all~$x\in[a, b]$. According to~\eqref{eq:union},
+     there exists $n_{k+1} > n_k$ such that~$[a, b] \subset n_{k+1}[a_k, b_k]$.
+     Let~$a_{k+1} = a/n_{k+1}$ and~$b_{k+1} = b/n_{k+1}$. Then~$b_{k+1}>a_{k+1}>0$, $[a_{k+1},
+     b_{k+1}]\subset[a_k, b_k]$, and~$f(n_{k+1}x) > \epsilon$ for all~$x\in [a_{k+1}, b_{k+1}]$.
+     This finishes the induction and completes the proof.   
+
+  2. Proof by Baire's Category Theorem. Let~$\epsilon$ be a positive constant. Since~$f(nx)\to 0$
+     for all~$x>0$, we have 
+  \begin{equation}
+    \mcup_{N=1}^\infty \mcap_{n=N}^\infty\left\{ x >0 \mathrel{:} |f(nx)| \le \epsilon \right\}
+    \;=\; (0,+\infty).
+  \end{equation}
+  By the continuity of~$f$, $\bigcap_{n=N}^\infty \{x> 0 \mathrel{:} |f(nx)\le \epsilon|\}$ is closed for
+  each~$N \ge 1$.
+  As~$\real$ is a Baire space, $(0,+\infty)$ is not meager. Thus there exists~$N$ and an open
+  interval~$(a, b)$ such that  
+  \begin{equation}
+    (a, b) \subset \mcap_{n=N}^\infty\left\{ x >0 \mathrel{:} |f(nx)| \le \epsilon \right\}.
+  \end{equation}
+  Therefore
+  \begin{equation}
+    \label{eq:abe}
+    n(a, b) \subset \left\{ x >0 \mathrel{:} |f(x)| \le \epsilon \right\}
+    \quad \text{ for each } \quad n\ge N.
+  \end{equation}
+  Note that there exists~$M >0$ such that 
+  \begin{equation}
+    \label{eq:abm}
+    [M, \infty) \subset \mcup_{n=N}^\infty n(a,b). 
+  \end{equation}
+  Combining~\eqref{eq:abe}--\eqref{eq:abm}, we have
+  \begin{equation}
+    [M, \infty) \subset \left\{ x >0 \mathrel{:} |f(x)| \le \epsilon \right\}, 
+  \end{equation}
+  which completes the proof. 
+
+\end{proof}
+
+\begin{proposition}
+  Let~$f\mathrel{:} (0,+\infty)\to \real$ be a continuous function. If~$\lim_{n\to \infty}f(nx)$ 
+  exists for all~$x>0$, then~$\lim_{x\to +\infty} f(x)$ exists.
+\end{proposition}
+
+
+
+\small
+\bibliography{ref-baire}
+\bibliographystyle{plain}
+
+\end{document}
