@@ -351,12 +351,12 @@ suffice to avoid confusion.
   Let~$A$ and~$B$ be two sets in a topological space~$X$. 
   \begin{enumerate}
     \item $A\subset \cl(B)$ if and only if~$\inter(B^\co ) \subset \inter(A^\co)$.
-    \item $A \subset \cl(B)$ if and only if~$U\cap B \neq \emptyset$ for any open
+    \item \label{it:abu} $A \subset \cl(B)$ if and only if~$U\cap B \neq \emptyset$ for any open
       set~$U$ such that~$U \cap  A \neq \emptyset$ 
       %(\ie, any neighborhood of any point in~$A$ has a nonempty intersection with~$B$).  
     \item \label{it:open} If~$A$ is open, then $A\subset \cl(B)$ if and only if $U\cap B \neq \emptyset$ for any
     nonempty open set~$U\subset A$.
-  \item If~$A\subset \cl(B)$, then $A\cap U \subset \cl(B\cap U)$ for any open set~$U$.
+  \item \label{it:abuu} If~$A\subset \cl(B)$, then $A\cap U \subset \cl(B\cap U)$ for any open set~$U$.
    %\item If~$A$ is dense in~$B$, then~$A\cap U$ is dense in~$B\cap U$ for any open set~$U$.  
    \item \label{it:dense}If $A$ is open and~$A\subset \cl(B)$, then~$A\cap B$ is dense in~$A$.
    %  , \ie, $A \subset \cl(A\cap B)$.
@@ -375,15 +375,15 @@ $\Leftrightarrow$ $\inter(B^\co)  \subset \inter(A^\co)$.
    while~$U\cap B = \emptyset$. 
 
 3. Suppose that~$A\subset \cl(B)$. For any nonempty open set~$U\subset A$, we have~$U\cap A = U\neq \emptyset$, 
-   and hence~$U\cap B\neq \emptyset$. 
+and hence~$U\cap B\neq \emptyset$ according to~\ref{it:abu}. 
    If~$A\not\subset \cl(B)$, then~$U=A\cap (\cl(B))^\co$ is a nonempty open set such that~$U\subset A$  
    while~$U\cap B = \emptyset$. 
 
 4. Since~$A \subset \cl(B)$, for any open set~$V$ such that~$A\cap U\cap V\neq \emptyset$, we have
-   according to~3 that~$B\cap U\cap V\neq \emptyset$. This implies~$A\cap U \subset \cl(B\cap U)$
-   according to~3.  
+according to~\ref{it:open} that~$B\cap U\cap V\neq \emptyset$. This implies~$A\cap U \subset \cl(B\cap U)$
+according to~\ref{it:open}.
 
-5. According to~4, $A = A\cap A \subset \cl(A\cap B)$ since~$A$ is open.
+5. According to~\ref{it:abuu}, $A = A\cap A \subset \cl(A\cap B)$ since~$A$ is open.
 
 6. Since~$\inter(\cl(A))$ is open, and~$\inter(\cl(A)) \subset \cl(A)$, we know from 5 that 
 $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$. 
@@ -544,7 +544,7 @@ Let~$X$ be a topological space.
   \label{lem:openb}
   Let~$X$ be a topological space, $Y$ be its open subspace, and~$S$ be a subset of~$Y$. 
   \begin{enumerate}
-    \item $S$ is rare in $X$ if and only if~$S$ is rare in~$Y$.
+    \item \label{it:rare}$S$ is rare in $X$ if and only if~$S$ is rare in~$Y$.
     \item $S$ is meager in $X$ if and only if~$S$ is meager in~$Y$.
   \end{enumerate}
 \end{lemma}
@@ -564,9 +564,9 @@ Let~$X$ be a topological space.
 
    2. If~$S$ is meager in~$X$, then~$S= \bigcup_{n=1}^\infty S_n$ with a sequence of rare
    sets~$\{S_n\}$ in~$X$. Each~$S_n$ is a subset of~$S$, and hence of~$Y$, and it is rare
-   in~$Y$ according to~1. Thus~$S$ is meager in~$Y$. If~$S$ is meager in~$Y$, then~$S
+   in~$Y$ according to~\ref{it:rare}. Thus~$S$ is meager in~$Y$. If~$S$ is meager in~$Y$, then~$S
    = \bigcup_{n=1}^\infty S_n$ with a sequence of rare sets~$\{S_n\}$ in~$Y$. Each~$S_n$ is rare in
-   in~$X$ according to~1. Thus~$S$ is meager in~$X$. 
+   in~$X$ according to~\ref{it:rare}. Thus~$S$ is meager in~$X$. 
 \end{proof}
 
 
@@ -605,6 +605,8 @@ Let~$X$ be a topological space.
   Thus~$\inter(\bigcup_{n=1}^\infty S_n) = \emptyset$. Hence~$X$ is a Baire space. 
 \end{proof}
 
+Theorems~\ref{th:intclcm}, \ref{th:intcllch}, and~\ref{th:intcl} lead us to Baire's Category
+Theorem.
 
 \begin{theorem}[Baire's Category Theorem, {\cite[Theorem~48.2]{Munkres_2000}}]
   \label{th:Baire}
