@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.6)  16 NOV 2020 23:27
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.6)  16 NOV 2020 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1550,7 +1550,7 @@ Package rerunfilecheck Info: File `baire.out' has not changed.
 Here is how much of TeX's memory you used:
  40719 strings out of 477428
  964165 string characters out of 5829941
- 1368698 words of memory out of 5000000
+ 1369698 words of memory out of 5000000
  59445 multiletter control sequences out of 15000+600000
  552373 words of font info for 107 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
