@@ -1,1 +1,1 @@
-This is the stable repository of baire.
+This is a development repository of baire.
