@@ -432,7 +432,7 @@ $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$.
   \quad \text{ for each } \quad  n \ge 0, 
   \end{equation}
   where $\bigcap_{k=1}^0 S_k=X$. 
-  We obtain~\eqref{eq:usnonempty} once this is done, as
+  We will obtain~\eqref{eq:usnonempty} once this is done, as
   Cantor's theorem will yield
     \begin{equation}
       \label{eq:nestnonempty}
@@ -584,8 +584,9 @@ Let~$X$ be a topological space.
 
 \begin{proof}
   1 $\Rightarrow$ 2. Let~$Y$ be an open subspace of~$X$, and~$S$ be a meager set in~$Y$.
-  Then~$S$ is meager in~$X$ by Lemma~\ref{lem:openb}. Since~$X$ is a Baire space,~$S$ has empty interior in~$X$, which
-  implies that~$S$ has empty interior in~$Y$. Hence~$Y$ is a Baire space. 
+  Then~$S$ is meager in~$X$ by Lemma~\ref{lem:openb}. Since~$X$ is a Baire space, we
+  have~$\inter_X(S)=\emptyset$, which implies~$\inter_Y(S)=\emptyset$ as~$Y$ is open in~$X$.
+  Hence~$Y$ is a Baire space. 
 
   2 $\Rightarrow$ 3. It suffices to prove that~$\inter(\bigcap_{n=1}^\infty \cl(S_n))\subset\cl(\bigcap_{n=1}^\infty S_n)$. 
   Let~$Y=\inter(\bigcap_{n=1}^\infty \cl(S_n))$. Then~$Y$ is a Baire space. 
