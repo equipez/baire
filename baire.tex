@@ -486,6 +486,16 @@ Let~$X$ be a topological space.
  Rare sets, subsets of meager sets, and countable unions of meager sets are all meager sets. 
 \end{proposition}
 
+\begin{example}
+  Let~$\{r_n\}_{n=1}^\infty$ be an enumeration of all the rational numbers.
+  Define
+  \begin{equation*} 
+    S = \bigcap_{m=1}^\infty \bigcup_{n=1}^\infty \left(r_n - \frac{1}{m\,2^n},\;
+    r_n+\frac{1}{m\,2^n}\right).
+  \end{equation*}
+  It is easy to check that~$S$ is comeager. Meanwhile, the Lebesgue measure of~$S$ is~$0$.
+\end{example}
+
 
 \begin{definition}
   A topological space~$X$ is called a Baire space if every meager set in~$X$ has empty interior.
