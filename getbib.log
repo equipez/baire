@@ -1,0 +1,20 @@
+*************************** checkbib.log ****************************
+Result of checking /home/zaikunzhang/Work/finished/baire/baire.bib in BibTeX mode
+
+===> Non-ASCII characters:
+
+
+--------------------------------------------------
+
+===> Capital letters that need to be protected by curly braces:
+
+
+--------------------------------------------------
+
+===> Message from python /home/zaikunzhang/local/textools/python/bibtex_check.py -o bibtex_check.html -b:
+
+--------------------------------------------------
+
+===> Message from biber:
+
+

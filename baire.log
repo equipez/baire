@@ -1,27 +1,30 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.6)  17 NOV 2020 20:50
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.26)  16 APR 2021 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **baire.tex
 (./baire.tex
-LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-10-27> xparse <2020-03-03>
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count171
-\c@section=\count172
-\c@subsection=\count173
-\c@subsubsection=\count174
-\c@paragraph=\count175
-\c@subparagraph=\count176
-\c@figure=\count177
-\c@table=\count178
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
+)
+(/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/oberdiek/ifdraft.sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
@@ -42,13 +45,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count179
+\inf@bad=\count183
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count180
-\leftroot@=\count181
+\uproot@=\count184
+\leftroot@=\count185
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count182
-\DOTSCASE@=\count183
+\classnum@=\count186
+\DOTSCASE@=\count187
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -57,15 +60,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count184
-\c@MaxMatrixCols=\count185
+\macc@depth=\count188
+\c@MaxMatrixCols=\count189
 \dotsspace@=\muskip16
-\c@parentequation=\count186
-\dspbrk@lvl=\count187
+\c@parentequation=\count190
+\dspbrk@lvl=\count191
 \tag@help=\toks16
-\row@=\count188
-\column@=\count189
-\maxfields@=\count190
+\row@=\count192
+\column@=\count193
+\maxfields@=\count194
 \andhelp@=\toks17
 \eqnshift@=\dimen142
 \alignsep@=\dimen143
@@ -108,33 +111,33 @@ Package: empheq 2017/03/31 v2.15 Emphasizing equations
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.st
 y
-Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/mathtools/mathtools.
 sty
-Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks26
 ) (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count191
-\calc@Bcount=\count192
+\calc@Acount=\count195
+\calc@Bcount=\count196
 \calc@Adimen=\dimen148
 \calc@Bdimen=\dimen149
 \calc@Askip=\skip55
 \calc@Bskip=\skip56
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count193
+\calc@Ccount=\count197
 \calc@Cskip=\skip57
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count194
+\g_MT_multlinerow_int=\count198
 \l_MT_multwidth_dim=\dimen150
 \origjot=\skip58
 \l_MT_shortvdotswithinadjustabove_dim=\dimen151
@@ -146,14 +149,14 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \xmathstrut@box=\box49
 \xmathstrut@dim=\dimen157
 )
-\l_EQ_equationtype_int=\count195
-\l_EQ_alignmentmode_int=\count196
+\l_EQ_equationtype_int=\count199
+\l_EQ_alignmentmode_int=\count266
 \l_EQ_totalwidth_dim=\dimen158
 \l_EQ_displaywidth_dim=\dimen159
 \l_EQ_temp_linewidth_dim=\dimen160
 \l_EQ_linewidth_dim=\dimen161
 \EmphEqdelimitershortfall=\dimen162
-\EmphEqdelimiterfactor=\count197
+\EmphEqdelimiterfactor=\count267
 \g_EQ_toptag_height_dim=\dimen163
 \g_EQ_bottomtag_depth_dim=\dimen164
 \g_EQ_toprow_height_dim=\dimen165
@@ -161,7 +164,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \g_EQ_widesttag_dim=\dimen167
 \EQ_mathdisplay_box=\box50
 \EQ_tag_box=\box51
-\g_EQ_temprow_int=\count198
+\g_EQ_temprow_int=\count268
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
@@ -200,16 +203,16 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip60
 \LTpre=\skip61
 \LTpost=\skip62
-\LTchunksize=\count199
+\LTchunksize=\count269
 \LTcapwidth=\dimen168
 \LT@head=\box52
 \LT@firsthead=\box53
 \LT@foot=\box54
 \LT@lastfoot=\box55
-\LT@cols=\count266
-\LT@rows=\count267
-\c@LT@tables=\count268
-\c@LT@chunks=\count269
+\LT@cols=\count270
+\LT@rows=\count271
+\c@LT@tables=\count272
+\c@LT@chunks=\count273
 \LT@p@ftn=\toks28
 ) (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
@@ -249,7 +252,7 @@ Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 ) (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count270
+\c@r@tfl@t=\count274
 \rotFPtop=\skip63
 \rotFPbot=\skip64
 \rot@float@box=\box56
@@ -284,7 +287,7 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 s.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )))
-\eql@cnt=\count271
+\eql@cnt=\count275
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/ti
 kz.sty
@@ -308,9 +311,9 @@ til-latex.def
 cs.code.tex
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/pgf.revision.t
 ex)
-Package: pgfrcs 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
 ))
-Package: pgf 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgfco
 re.sty
@@ -318,7 +321,7 @@ re.sty
 ys.sty
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pg
 fsys.code.tex
-Package: pgfsys 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfk
 eys.code.tex
@@ -341,44 +344,44 @@ eysfiltered.code.tex
 \pgf@yd=\dimen184
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count272
-\c@pgf@countb=\count273
-\c@pgf@countc=\count274
-\c@pgf@countd=\count275
+\c@pgf@counta=\count276
+\c@pgf@countb=\count277
+\c@pgf@countc=\count278
+\c@pgf@countd=\count279
 \t@pgf@toka=\toks35
 \t@pgf@tokb=\toks36
 \t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count276
+\pgf@sys@id@count=\count280
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pg
 f.cfg
-File: pgf.cfg 2020/10/01 v3.1.6a (3.1.6a)
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
 Driver file for pgf: pgfsys-xetex.def
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pg
 fsys-xetex.def
-File: pgfsys-xetex.def 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfsys-xetex.def 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pg
 fsys-dvipdfmx.def
-File: pgfsys-dvipdfmx.def 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfsys-dvipdfmx.def 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pg
 fsys-common-pdf.def
-File: pgfsys-common-pdf.def 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 )
-\pgfsys@objnum=\count277
+\pgfsys@objnum=\count281
 )))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pg
 fsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgfsyssoftpath@smallbuffer@items=\count278
-\pgfsyssoftpath@bigbuffer@items=\count279
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count282
+\pgfsyssoftpath@bigbuffer@items=\count283
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pg
 fsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -400,7 +403,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 core.code.tex
-Package: pgfcore 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.c
 ode.tex
@@ -411,7 +414,7 @@ il.code.tex)
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathpa
 rser.code.tex
 \pgfmath@dimen=\dimen185
-\pgfmath@count=\count280
+\pgfmath@count=\count284
 \pgfmath@box=\box62
 \pgfmath@toks=\toks38
 \pgfmath@stack@operand=\toks39
@@ -437,13 +440,13 @@ nctions.misc.code.tex)
 nctions.integerarithmetics.code.tex)))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfl
 oat.code.tex
-\c@pgfmathroundto@lastzeros=\count281
+\c@pgfmathroundto@lastzeros=\count285
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.co
 de.tex)
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corepoints.code.tex
-File: pgfcorepoints.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@picminx=\dimen186
 \pgf@picmaxx=\dimen187
 \pgf@picminy=\dimen188
@@ -461,103 +464,103 @@ File: pgfcorepoints.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@path@lastx=\dimen256
 \pgf@path@lasty=\dimen257
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corepathusage.code.tex
-File: pgfcorepathusage.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@shorten@end@additional=\dimen258
 \pgf@shorten@start@additional=\dimen259
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corescopes.code.tex
-File: pgfcorescopes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfpic=\box63
 \pgf@hbox=\box64
 \pgf@layerbox@main=\box65
-\pgf@picture@serial@count=\count282
+\pgf@picture@serial@count=\count286
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 coregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgflinewidth=\dimen260
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 coretransformations.code.tex
-File: pgfcoretransformations.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@pt@x=\dimen261
 \pgf@pt@y=\dimen262
 \pgf@pt@temp=\dimen263
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corequick.code.tex
-File: pgfcorequick.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 coreobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corearrows.code.tex
-File: pgfcorearrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfarrowsep=\dimen264
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 coreshade.code.tex
-File: pgfcoreshade.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@max=\dimen265
-\pgf@sys@shading@range@num=\count283
-\pgf@shadingcount=\count284
+\pgf@sys@shading@range@num=\count287
+\pgf@shadingcount=\count288
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 coreimage.code.tex
-File: pgfcoreimage.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 coreexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfexternal@startupbox=\box66
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corelayers.code.tex
-File: pgfcorelayers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 coretransparency.code.tex
-File: pgfcoretransparency.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corepatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgf
 corerdf.code.tex
-File: pgfcorerdf.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmod
 uleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfnodeparttextbox=\box67
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmod
 uleplot.code.tex
-File: pgfmoduleplot.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pg
 fcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@nodesepstart=\dimen266
 \pgf@nodesepend=\dimen267
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pg
 fcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgffor
 .sty
@@ -571,7 +574,7 @@ eys.code.tex))
 ode.tex))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgff
 or.code.tex
-Package: pgffor 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.c
 ode.tex)
@@ -582,12 +585,12 @@ ode.tex)
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/tikz.code.tex
-Package: tikz 2020/10/01 v3.1.6a (3.1.6a)
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgfl
 ibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgf@plot@mark@count=\count285
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count289
 \pgfplotmarksize=\dimen270
 )
 \tikz@lastx=\dimen271
@@ -602,23 +605,23 @@ File: pgflibraryplothandlers.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 \tikz@figbox@bg=\box69
 \tikz@tempbox=\box70
 \tikz@tempbox@bg=\box71
-\tikztreelevel=\count286
-\tikznumberofchildren=\count287
-\tikznumberofcurrentchild=\count288
-\tikz@fig@count=\count289
+\tikztreelevel=\count290
+\tikznumberofchildren=\count291
+\tikznumberofcurrentchild=\count292
+\tikz@fig@count=\count293
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmod
 ulematrix.code.tex
-File: pgfmodulematrix.code.tex 2020/10/01 v3.1.6a (3.1.6a)
-\pgfmatrixcurrentrow=\count290
-\pgfmatrixcurrentcolumn=\count291
-\pgf@matrix@numberofcolumns=\count292
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count294
+\pgfmatrixcurrentcolumn=\count295
+\pgf@matrix@numberofcolumns=\count296
 )
-\tikz@expandcount=\count293
+\tikz@expandcount=\count297
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/tikzscale/tikzscale.
 sty
@@ -627,25 +630,29 @@ Package: tikzscale 2013/05/22 v0.2.6 tikzscale LaTeX package
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.st
 y
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count294
+\etb@tempcnta=\count298
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xp
 arse.sty
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-10-27 L3 programming layer (loader) 
+Package: expl3 2021-02-18 L3 programming layer (loader) 
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-
 xetex.def
-File: l3backend-xetex.def 2020-09-24 L3 backend support: XeTeX
-\g__graphics_track_int=\count295
+File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
+ (|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count299
+\l__color_backend_stack_int=\count300
+\g__graphics_track_int=\count301
 \l__pdf_internal_box=\box72
-\g__pdf_backend_object_int=\count296
-\g__pdf_backend_annotation_int=\count297
+\g__pdf_backend_object_int=\count302
+\g__pdf_backend_annotation_int=\count303
+\g__pdf_backend_link_int=\count304
 ))
-Package: xparse 2020-10-27 L3 Experimental document command parser
-
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xp
-arse-generic.tex))
+arse-2020-10-01.sty
+(/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xp
+arse-generic.tex)))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxma
 cro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
@@ -654,9 +661,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 y
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/xstring/xstring.te
 x
-\integerpart=\count298
+\integerpart=\count305
 Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
-\decimalpart=\count299
+\decimalpart=\count306
 Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 83 replaced by U+FFFD.
@@ -799,7 +806,7 @@ Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pg
 farrows.sty
-Package: pgfarrows 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfarrows 2020/12/27 v3.1.8b (3.1.8b)
 
 
 Package pgfarrows Warning: This package is obsolete. pgf.sty will load arrow ma
@@ -808,7 +815,7 @@ nagement automatically on input line 17.
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pg
 fnodes.sty
-Package: pgfnodes 2020/10/01 v3.1.6a (3.1.6a)
+Package: pgfnodes 2020/12/27 v3.1.8b (3.1.8b)
 
 
 Package pgfnodes Warning: This package is obsolete. pgf.sty will load node mana
@@ -833,15 +840,15 @@ Package: tikz-cd 2018/11/19 v0.9f Commutative diagrams with TikZ
 ycd.code.tex
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibrarymatrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryquotes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgfl
 ibraryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibraryarrows.meta.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfarrowinset=\dimen279
 \pgfarrowlength=\dimen280
 \pgfarrowwidth=\dimen281
@@ -849,24 +856,24 @@ File: pgflibraryarrows.meta.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 )))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgfl
 ibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \arrowsize=\dimen283
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibrarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgfl
 ibrarypatterns.code.tex
-File: pgflibrarypatterns.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibrarypatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibrarydecorations.markings.code.tex
@@ -879,7 +886,7 @@ uledecorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen286
 \pgfdecoratedinputsegmentremainingdistance=\dimen287
 \pgf@decorate@distancetomove=\dimen288
-\pgf@decorate@repeatstate=\count300
+\pgf@decorate@repeatstate=\count307
 \pgfdecorationsegmentamplitude=\dimen289
 \pgfdecorationsegmentlength=\dimen290
 )
@@ -889,39 +896,39 @@ uledecorations.code.tex
 rations/pgflibrarydecorations.markings.code.tex))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shap
 es/pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shap
 es/pgflibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shap
 es/pgflibraryshapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shap
 es/pgflibraryshapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryshapes.callouts.code.tex
@@ -929,11 +936,11 @@ tikz/libraries/tikzlibraryshapes.callouts.code.tex
 es/pgflibraryshapes.callouts.code.tex))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shap
 es/pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfnodepartlowerbox=\box75
 \pgfnodeparttwobox=\box76
 \pgfnodepartthreebox=\box77
@@ -969,8 +976,8 @@ ore.code.tex
 \t@pgfplots@tokb=\toks44
 \t@pgfplots@tokc=\toks45
 \pgfplots@tmpa=\dimen291
-\c@pgfplots@coordindex=\count301
-\c@pgfplots@scanlineindex=\count302
+\c@pgfplots@coordindex=\count308
+\c@pgfplots@scanlineindex=\count309
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgfpl
 otssysgeneric.code.tex))
@@ -988,13 +995,13 @@ ture/pgfplotsliststructure.code.tex)
 ture/pgfplotsliststructureext.code.tex)
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststruc
 ture/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count303
+\c@pgfplotsarray@tmp=\count310
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststruc
 ture/pgfplotsmatrix.code.tex)
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/numtable/
 pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count304
+\c@pgfplotstable@counta=\count311
 \t@pgfplotstable@a=\toks46
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststruc
@@ -1007,13 +1014,13 @@ lotsbinary.data.code.tex))
 lotsutil.verb.code.tex)
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/pgfl
 ibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count305
+\c@pgfplotslibrarysurf@no=\count312
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgfli
 brarypgfplots.surfshading.pgfsys-xetex.def
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgfli
 brarypgfplots.surfshading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count306
+\c@pgfplotslibrarysurf@streamlen=\count313
 ))))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/util/pgfp
 lotscolormap.code.tex
@@ -1047,7 +1054,7 @@ rations/pgflibrarydecorations.pathmorphing.code.tex))
 tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/deco
 rations/pgflibrarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count307
+\pgfplots@numplots=\count314
 \pgfplots@xmin@reg=\dimen292
 \pgfplots@xmax@reg=\dimen293
 \pgfplots@ymin@reg=\dimen294
@@ -1057,11 +1064,11 @@ rations/pgflibrarydecorations.pathreplacing.code.tex))
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/
 tikz/libraries/tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: tikzlibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgfl
 ibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2020/10/01 v3.1.6a (3.1.6a)
+File: pgflibraryplotmarks.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/pgfplots/pgfplotstab
 le.sty
@@ -1088,8 +1095,8 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen304
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count308
-\c@continuedfloat=\count309
+\c@caption@flags=\count315
+\c@continuedfloat=\count316
 Package caption Info: longtable package is loaded.
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.st
@@ -1106,7 +1113,7 @@ b/tikzlibraryfillbetween.code.tex
 tikz/libraries/tikzlibraryintersections.code.tex
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgfl
 ibraryintersections.code.tex
-\pgf@intersect@solutions=\count310
+\pgf@intersect@solutions=\count317
 ))
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfcontri
 b/tikzlibrarydecorations.softclip.code.tex
@@ -1118,32 +1125,32 @@ librarypgfplots.decorations.softclip.code.tex))
 Package: accents 2006/05/12 v1.4 Math Accent Tools
 \cc@skew=\dimen305
 \cc@wd=\dimen306
-\cc@code=\count311
-\cc@group=\count312
-\cc@skewchar=\count313
+\cc@code=\count318
+\cc@group=\count319
+\cc@skewchar=\count320
 ) (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/silence/silence.sty
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error mes
 sages
-\sl@Save=\count314
-\sl@StateNumber=\count315
-\sl@MessageCount=\count316
-\sl@Casualties=\count317
+\sl@Save=\count321
+\sl@StateNumber=\count322
+\sl@MessageCount=\count323
+\sl@Casualties=\count324
 \sl@Filter=\toks47
 \sl@Message=\toks48
 \sl@UnexpandedMessage=\toks49
 \sl@Mess@ge=\toks50
-\sl@WarningCount=\count318
-\sl@WarningNumber=\count319
-\sl@WarningCasualties=\count320
+\sl@WarningCount=\count325
+\sl@WarningNumber=\count326
+\sl@WarningCasualties=\count327
 \sl@TempBOW=\toks51
 \sl@BankOfWarnings=\toks52
 LaTeX Info: Redefining \GenericWarning on input line 433.
-\sl@ErrorCount=\count321
-\sl@ErrorNumber=\count322
-\sl@ErrorCasualties=\count323
+\sl@ErrorCount=\count328
+\sl@ErrorNumber=\count329
+\sl@ErrorCasualties=\count330
 \sl@TempBOE=\toks53
 \sl@BankOfErrors=\toks54
 LaTeX Info: Redefining \GenericError on input line 601.
@@ -1153,7 +1160,7 @@ LaTeX Info: Redefining \GenericError on input line 601.
 \UL@skip=\skip70
 \UL@hook=\toks55
 \UL@height=\dimen307
-\UL@pe=\count324
+\UL@pe=\count331
 \UL@pixel=\dimen308
 \ULC@box=\box97
 Package: ulem 2019/11/18
@@ -1162,15 +1169,15 @@ Package: ulem 2019/11/18
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/appendix/appendix.st
 y
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count325
-\c@@ppsavesec=\count326
-\c@@ppsaveapp=\count327
+\c@@pps=\count332
+\c@@ppsavesec=\count333
+\c@@ppsaveapp=\count334
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.st
 y
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
-\multirow@cntb=\count328
+\multirow@cntb=\count335
 \multirow@dima=\skip72
 \bigstrutjot=\dimen310
 )
@@ -1187,12 +1194,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen318
 \cmidrulekern=\dimen319
 \defaultaddspace=\dimen320
-\@cmidla=\count329
-\@cmidlb=\count330
+\@cmidla=\count336
+\@cmidlb=\count337
 \@aboverulesep=\dimen321
 \@belowrulesep=\dimen322
-\@thisruleclass=\count331
-\@lastruleclass=\count332
+\@thisruleclass=\count338
+\@lastruleclass=\count339
 \@thisrulewidth=\dimen323
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.st
@@ -1202,8 +1209,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen324
 \enit@toks=\toks56
 \enit@inbox=\box98
-\enit@count@id=\count333
-\enitdp@description=\count334
+\enit@count@id=\count340
+\enitdp@description=\count341
 ) (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/was/upgreek.sty
 Package: upgreek 2003/02/12 v2.0 (WaS)
 Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
@@ -1213,7 +1220,7 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.st
 y
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.st
 y
@@ -1257,11 +1264,16 @@ sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen325
-\Hy@linkcounter=\count335
-\Hy@pagecounter=\count336
+\Hy@linkcounter=\count342
+\Hy@pagecounter=\count343
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+)
+(/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref-la
+ngpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.st
 y
@@ -1271,16 +1283,20 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count337
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing OFF on input line 4484.
+\Hy@SavedSpaceFactor=\count344
+
+(/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count338
-LaTeX Info: Redefining \url on input line 5076.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count345
+LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen326
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
@@ -1291,18 +1307,18 @@ alc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count339
+\Fld@menulength=\count346
 \Field@Width=\dimen327
 \Fld@charsize=\dimen328
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing OFF on input line 6362.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/base/atbegshi-ltx.st
 y
@@ -1310,28 +1326,25 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count340
-\c@Item=\count341
-\c@Hfootnote=\count342
+\Hy@abspage=\count347
+\c@Item=\count348
+\c@Hfootnote=\count349
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2020-05-15 v7.00e Hyperref driver for XeTeX
+File: hxetex.def 2021-02-27 v7.00k Hyperref driver for XeTeX
 
-(/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
-)
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/stringenc/stringen
 c.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box99
-\c@Hy@AnnotLevel=\count343
-\HyField@AnnotCount=\count344
-\Fld@listcount=\count345
-\c@bookmark@seq@number=\count346
+\c@Hy@AnnotLevel=\count350
+\HyField@AnnotCount=\count351
+\Fld@listcount=\count352
+\c@bookmark@seq@number=\count353
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerun
 filecheck.sty
@@ -1352,7 +1365,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip74
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 61.
+Package hyperref Info: Option `colorlinks' set `true' on input line 68.
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/algorithms/algorithm
 .sty
@@ -1361,14 +1374,14 @@ Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
  (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count347
+\c@float@type=\count354
 \float@exts=\toks57
 \float@box=\box100
 \@float@everytoks=\toks58
 \@floatcapt=\box101
 )
 \@float@every@algorithm=\toks59
-\c@algorithm=\count348
+\c@algorithm=\count355
 )
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/algorithmicx/algpseu
 docode.sty
@@ -1379,44 +1392,44 @@ hmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count349
-\c@ALG@rem=\count350
-\c@ALG@nested=\count351
+\c@ALG@line=\count356
+\c@ALG@rem=\count357
+\c@ALG@nested=\count358
 \ALG@tlm=\skip75
 \ALG@thistlm=\skip76
-\c@ALG@Lnr=\count352
-\c@ALG@blocknr=\count353
-\c@ALG@storecount=\count354
-\c@ALG@tmpcounter=\count355
+\c@ALG@Lnr=\count359
+\c@ALG@blocknr=\count360
+\c@ALG@storecount=\count361
+\c@ALG@tmpcounter=\count362
 \ALG@tmplength=\skip77
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-\c@theorem=\count356
-\c@acknowledgement=\count357
-\c@alg=\count358
-\c@axiom=\count359
-\c@case=\count360
-\c@claim=\count361
-\c@conclusion=\count362
-\c@condition=\count363
-\c@conjecture=\count364
-\c@corollary=\count365
-\c@criterion=\count366
-\c@exercise=\count367
-\c@lemma=\count368
-\c@notation=\count369
-\c@problem=\count370
-\c@proposition=\count371
-\c@remark=\count372
-\c@solution=\count373
-\c@assumption=\count374
-\c@summary=\count375
-\c@note=\count376
-\c@doubt=\count377
-\c@properties=\count378
-\c@example=\count379
-\c@definition=\count380
+\c@theorem=\count363
+\c@acknowledgement=\count364
+\c@alg=\count365
+\c@axiom=\count366
+\c@case=\count367
+\c@claim=\count368
+\c@conclusion=\count369
+\c@condition=\count370
+\c@conjecture=\count371
+\c@corollary=\count372
+\c@criterion=\count373
+\c@exercise=\count374
+\c@lemma=\count375
+\c@notation=\count376
+\c@problem=\count377
+\c@proposition=\count378
+\c@remark=\count379
+\c@solution=\count380
+\c@assumption=\count381
+\c@summary=\count382
+\c@note=\count383
+\c@doubt=\count384
+\c@properties=\count385
+\c@example=\count386
+\c@definition=\count387
  (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/xpatch/xpatch.sty
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 )
@@ -1428,9 +1441,9 @@ Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
 Package: relsize 2013/03/29 ver 4.1
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathsfit' in version `bold'
-(Font)                  T1/lmss/m/sl --> T1/lmss/b/sl on input line 187.
+(Font)                  T1/lmss/m/sl --> T1/lmss/b/sl on input line 194.
 LaTeX Font Info:    Overwriting math alphabet `\mathlcal' in version `bold'
-(Font)                  U/dutchcal/m/n --> U/dutchcal/b/n on input line 213.
+(Font)                  U/dutchcal/m/n --> U/dutchcal/b/n on input line 220.
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/mathalpha/mathalfa.s
 ty)
@@ -1439,7 +1452,7 @@ sty
 Package: mathalpha 2019/10/05 - 1.13mathalpha (License LPPL) Michael Sharpe
  `mathalpha' v1.13, 2019/10/05, a renaming of mathalfa (msharpe)
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.te
 x
@@ -1448,7 +1461,7 @@ ex
 \XKV@toks=\toks60
 \XKV@tempa@toks=\toks61
 )
-\XKV@depth=\count381
+\XKV@depth=\count388
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `bold'
@@ -1459,32 +1472,32 @@ LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `bold'
  (./baire.aux)
 \openout1 = `baire.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 267.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 274.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-67.
+74.
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 267.
-LaTeX Font Info:    ... okay on input line 267.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.17} (current compat level: 1.11).
@@ -1493,10 +1506,10 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 267.
+Package hyperref Info: Link coloring ON on input line 274.
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.st
 y
@@ -1506,54 +1519,49 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 titlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count382
+\c@section@level=\count389
 )
-LaTeX Info: Redefining \ref on input line 267.
-LaTeX Info: Redefining \pageref on input line 267.
-LaTeX Info: Redefining \nameref on input line 267.
+LaTeX Info: Redefining \ref on input line 274.
+LaTeX Info: Redefining \pageref on input line 274.
+LaTeX Info: Redefining \nameref on input line 274.
  (./baire.out) (./baire.out)
 \@outlinefile=\write4
 \openout4 = `baire.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 270
+LaTeX Font Info:    Trying to load font information for U+msa on input line 277
 .
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 270
+LaTeX Font Info:    Trying to load font information for U+msb on input line 277
 .
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+bbold on input line 2
-70.
+77.
 
 (/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/latex/bbold/Ubbold.fd)
-Underfull \hbox (badness 1515) in paragraph at lines 270--270
+Underfull \hbox (badness 1515) in paragraph at lines 277--277
 [][]\TU/lmr/m/n/9 Department of Applied Mathematics, The Hong Kong Polytechnic 
 University, Hong Kong, China
  []
 
-
-(/home/zaikunzhang/local/texlive/2020/texmf-dist/tex/generic/stringenc/se-ascii
--print.def
-File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
-
-) [1
+[1
 
 ] [2] [3] [4] [5] (./baire.bbl [6]) [7] (./baire.aux)
 Package rerunfilecheck Info: File `baire.out' has not changed.
-(rerunfilecheck)             Checksum: 2BB7D70DECDDC45A3F5F175F66D679E7;328.
+(rerunfilecheck)             Checksum: 78A8E064C1885CF7DAC3DB51A6DE518F;848.
  ) 
 Here is how much of TeX's memory you used:
- 40722 strings out of 477428
- 964191 string characters out of 5829941
- 1369698 words of memory out of 5000000
- 59448 multiletter control sequences out of 15000+600000
- 552373 words of font info for 107 fonts, out of 8000000 for 9000
+ 39424 strings out of 476957
+ 929753 string characters out of 5817111
+ 1384490 words of memory out of 5000000
+ 58610 multiletter control sequences out of 15000+600000
+ 420715 words of font info for 105 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 85i,11n,107p,727b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 87i,11n,89p,727b,548s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on baire.pdf (7 pages).

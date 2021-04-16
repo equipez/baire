@@ -2,10 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: baire.aux
 The style file: plain.bst
-Database file #1: ref-baire.bib
+Database file #1: baire.bib
 You've used 3 entries,
             2118 wiz_defined-function locations,
-            624 strings with 5631 characters,
+            520 strings with 4367 characters,
 and the built_in function-call counts, 741 in all, are:
 = -- 71
 > -- 27
