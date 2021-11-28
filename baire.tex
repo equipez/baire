@@ -28,7 +28,7 @@
 % graph, tikz and pgf
 %\usepackage{subfigure}
 \usepackage{graphicx}
-\usepackage{tikz,tikzscale,pgf,pgfarrows,pgfnodes,filecontents,tikz-cd,}
+\usepackage{tikz,tikzscale,pgf,tikz-cd,}
 \usetikzlibrary{arrows,arrows.meta,patterns,positioning,decorations.markings,shapes}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
@@ -600,12 +600,12 @@ Let~$X$ be a topological space.
 \end{theorem}
 
 \begin{proof}
-  1 $\Rightarrow$ 2. Let~$Y$ be an open subspace of~$X$, and~$S$ be a meager set in~$Y$.
+  1~$\Rightarrow$~2. Let~$Y$ be an open subspace of~$X$, and~$S$ be a meager set in~$Y$.
   Then~$S$ is meager in~$X$ by Lemma~\ref{lem:openb}. Since~$X$ is a Baire space, we
   have~$\inter_X(S)=\emptyset$, which implies~$\inter_Y(S)=\emptyset$ as~$Y$ is open in~$X$.
   Hence~$Y$ is a Baire space.
 
-  2 $\Rightarrow$ 3. It suffices to prove that~$\inter(\bigcap_{n=1}^\infty \cl(S_n))\subset\cl(\bigcap_{n=1}^\infty S_n)$.
+  2~$\Rightarrow$~3. It suffices to prove that~$\inter(\bigcap_{n=1}^\infty \cl(S_n))\subset\cl(\bigcap_{n=1}^\infty S_n)$.
   Let~$Y=\inter(\bigcap_{n=1}^\infty \cl(S_n))$. Then~$Y$ is a Baire space.
   Define $T_n = S_n\cap Y$ for each~$n\ge 1$. Then each~$T_n$ is open in~$Y$. Since~$Y$ is open
   and~$Y\subset \cl(S_n)$, we know from item~\ref{it:dense} of Proposition~\ref{prop:dense}
@@ -613,9 +613,9 @@ Let~$X$ be a topological space.
   is dense in~$Y$. Therefore, $Y \subset \cl(\bigcap_{n=1}^\infty T_n) \subset
   \cl(\bigcap_{n=1}^\infty S_n)$ as desired.
 
-  3 $\Rightarrow$ 4. Obvious by the duality between interior and closure.
+  3~$\Rightarrow$~4. Obvious by the duality between interior and closure.
 
-  4 $\Rightarrow$ 5. Let~$\{S_n\}$ be a sequence of closed sets in~$X$ with empty interior. Then we
+  4~$\Rightarrow$~1.~Let~$\{S_n\}$ be a sequence of closed sets in~$X$ with empty interior. Then we
     have
   $\cl(\inter(\bigcup_{n=1}^\infty S_n)) = \cl(\bigcup_{n=1}^\infty \inter(S_n)) = \emptyset$.
   Thus~$\inter(\bigcup_{n=1}^\infty S_n) = \emptyset$. Hence~$X$ is a Baire space.
@@ -663,6 +663,7 @@ Theorem.
 \section{Examples}
 
 \begin{proposition}
+    \label{prop:nx}
   Let~$f\mathrel{:} (0,+\infty)\to \real$ be a continuous function. If~$\lim_{n\to \infty}f(nx) = 0$
    for all~$x>0$, then~$\lim_{x\to +\infty} f(x) = 0$.
 \end{proposition}
@@ -728,6 +729,9 @@ Theorem.
   which completes the proof.
 
 \end{proof}
+
+Proposition~\ref{prop:nx} can be strengthened to the following one, which can also be proved by
+Baire's Category Theorem.
 
 \begin{proposition}
   Let~$f\mathrel{:} (0,+\infty)\to \real$ be a continuous function. If~$\lim_{n\to \infty}f(nx)$
