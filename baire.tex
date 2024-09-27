@@ -305,7 +305,7 @@ University, Hong Kong, China ({\tt zaikun.zhang@polyu.edu.hk}).
 
 \begin{proposition}
   \label{prop:subintcl}
-  Let~$X$ be a topological space and~$Y$ be its subspace
+  Let~$X$ be a topological space and~$Y$ be its subspace.
   \begin{enumerate}
     \item For any~$S\subset Y$, $\inter_Y(S) \supset \inter_X(S)$;
       if~$Y$ is open in~$X$, then $\inter_Y(S)=\inter_X(S)$.
@@ -336,7 +336,7 @@ suffice to avoid confusion.
   %Let~$A$ and~$B$ be two sets in a topological space~$X$ such that~$A\subset B$. If~$\cl(A) \supset B$, then~$A$ is said to be dense in~$B$.
   Let~$A$ and~$B$ be two sets in a topological space~$X$
   \begin{enumerate}
-    \item If~$\cl(A) = X$, then~$A$ is said to be dense in~$X$.
+      \item If~$\cl(A) = X$ (equivalently, $\inter(A^\co) = \emptyset$), then~$A$ is said to be dense in~$X$.
     \item If~$A\subset B$ and~$A$ is dense in~$B$ with respect to the subspace topology on $B$,
     then we will simply say that~$A$ is dense in~$B$.
   \end{enumerate}
@@ -401,7 +401,7 @@ $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$.
 \begin{theorem}[Cantor's theorem]
   \label{th:cantor}
   Let~$X$ be a topological space, and~$\{C_n\}$ be a sequence of
-  closed sets such that~$C_{n+1}\subset C_n$ for each~$n\ge 1$.
+  nonempty closed sets such that~$C_{n+1}\subset C_n$ for each~$n\ge 1$.
 \begin{enumerate}
   \item If~$X$ is complete metric space and~$\diam(C_n)\to 0$, then~$\bigcap_{n=1}^\infty C_n$ is
     a singleton.
@@ -409,12 +409,30 @@ $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$.
 \end{enumerate}
 \end{theorem}
 
+\begin{proof}
+    1.~For each~$n\ge 1$, pick a point~$x_n\in C_n$. For any integers~$m$ and~$n$ such that~$m\ge
+    n \ge 1$, we have~$\{x_m,x_n\}\subset C_m \bigcup C_n = C_n$ and hence
+    \[
+        \dist(x_m,x_n) \;\le\; \diam(C_n) \;\to\; 0 \quad \text{as }~ n\to\infty.
+    \]
+    Thus the sequence~$\{x_n\}$ is Cauchy, converging to a point~$x\in X$ due to the
+    completeness of~$X$. For each~$n\ge 1$, since~$C_n$ is closed
+    and~$\{x_k\}_{k\ge n}\subset \bigcup_{k\ge n} X_k = X_n$, we know
+    that~$x\in C_n$. Thus~$x\in \bigcap_{n=1}^\infty C_n$. Noting that~$\diam(\bigcap_{n=1}
+    ^\infty C_n) \le\diam(C_n) \to 0$, we have~$\bigcap_{n=1}^\infty C_n = \{x\}$.
+
+    2.~For each~$n\ge 1$, pick a point~$x_n\in C_n$. Then~$\{x_n\} \subset X_1$. Due to the
+    compactness of~$X_1$, there exists a subsequence~$\{x_{i_k}\}$ of~$\{x_n\}$ that converges to a
+    point~$x\in X$. For each~$n\ge 1$, since~$C_n$ is closed and~$\{x_{i_k}\}_{k\ge n}\subset C_{i_n}
+    \subset C_n$, we know that~$x\in C_n$ and hence~$x\in \bigcap_{n=1}^\infty C_n$.
+    Thus~$\bigcap_{n=1}^\infty C_n$ is nonempty.
+\end{proof}
 
 \begin{theorem}[{\cite[Theorems~1.4.5--1.4.6]{Zalinescu_2002}}]
   \label{th:intclcm}
   Let~$X$ be a complete metric space and $\{S_n\}_{n=1}^\infty$ be a sequence of sets in~$X$.
   \begin{enumerate}
-    \item If each~$S_n$ is open, then $\cl(\bigcap_{n=1}^\infty S_n)$ and~$\bigcap_{n=1}^\infty \cl(S_n)$ have the same interior.
+      \item\label{it:intcm} If each~$S_n$ is open, then $\cl(\bigcap_{n=1}^\infty S_n)$ and~$\bigcap_{n=1}^\infty \cl(S_n)$ have the same interior.
 %      that is $\inter (\cl(\bigcap_{n=1}^\infty S_n)) = \inter(\bigcap_{n=1}^\infty \cl(S_n))$.
     \item If each~$S_n$ is closed, then $\inter(\bigcup_{n=1}^\infty S_n)$ and~$\bigcup_{n=1}^\infty \inter(S_n)$ have the same closure.
 %      that is  $\cl (\inter(\bigcup_{n=1}^\infty S_n)) = \cl(\bigcup_{n=1}^\infty \inter(S_n))$.
@@ -422,7 +440,7 @@ $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$.
 \end{theorem}
 
 \begin{proof}
-  Due to the duality between closure and interior, we only prove~$1$, for which it suffices to show that
+    Due to the duality between closure and interior, we only prove~\ref{it:intcm}, for which it suffices to show that
   $\inter(\bigcap_{n=1}^\infty \cl(S_n))\subset \cl(\bigcap_{n=1}^\infty S_n)$.
   By item~\ref{it:open} of Proposition~\ref{prop:dense}, we only need to prove for a given
   nonempty open set~$U \subset \bigcap_{n=1}^\infty \cl(S_n)$ that%
@@ -452,9 +470,8 @@ $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$.
     such that~$0<\diam(B_0)< 1$.
     Assume that the closed ball~$B_n$ is already defined for an~$n\ge 0$
     so that~$0<\diam(B_n)< 2^{-n}$ and~$B_n\subset U\cap(\bigcap_{k=1}^n S_k)$.
-    Recalling that~$U\subset\cl(S_{n+1})$,
-    we have~$\inter(B_n)\subset \cl(S_{n+1})$, which implies that~$\inter(B_n) \cap S_{n+1} \neq
-    \emptyset$. Since~$\inter(B_n)\cap S_{n+1}$ is open, we
+    Since~$U\subset\cl(S_{n+1})$ and~$\inter(B_n)$ is a nonempty open subset of~$U$,
+    we have that~$\inter(B_n) \cap S_{n+1} \neq \emptyset$. Noting that~$\inter(B_n)\cap S_{n+1}$ is open, we
     can take a closed ball~$B_{n+1}\subset \inter(B_n)\cap S_{n+1}$ such that~$0<\diam(B_{n+1})< 2^{-(n+1)}$.
     It is easy to see that~$B_{n+1}\subset B_n$ and
     %$B_{n+1}\subset B_{n}\cap S_{n+1} \subset [U\cap (\bigcap_{k=1}^n S_{k})]\cap S_{n+1} = U\cap(\bigcap_{k=1}^{n+1} S_k)$.
@@ -474,6 +491,26 @@ $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$.
  established by the local compactness of~$X$.  Since~$X$ is a Hausdorff space, each~$B_n$ is closed,
  and hence~$\bigcap_{n=1}^\infty B_n$ is nonempty by Cantor's theorem.
 \end{proof}
+
+\begin{corollary}
+    \label{coro:intcl}
+    Let~$X$ be a complete metric space or a locally compact Hausdorff space,
+    and~$\{S_n\}_{n=1}^\infty$ be a sequence of sets in~$X$.
+    \begin{enumerate}
+        \item\label{it:dense} If each~$S_n$ is open and dense, then~$\bigcap_{n=1}^\infty S_n$ is dense.
+        \item\label{it:emptyint} If each~$S_n$ is closed and has empty interior, then~$\bigcup_{n=1}^\infty S_n$ has empty interior.
+    \end{enumerate}
+\end{corollary}
+
+\begin{proof}
+    \ref{it:dense}.~According to Theorems~\ref{th:intclcm} and~\ref{th:intcllch},
+    $\cl(\bigcap_{n=1}^\infty S_n) \supset \inter( \bigcap_{n=1}^\infty \cl(S_n)) = X$.
+
+    \ref{it:emptyint}.~According to Theorems~\ref{th:intclcm} and~\ref{th:intcllch},
+    $\inter(\bigcup_{n=1}^\infty S_n) \subset \cl(\bigcap_{n=1}^\infty \inter(S_n)) = \emptyset$.
+    Alternatively, we can use item~\ref{it:dense} and the duality between interior and closure.
+\end{proof}
+
 
 \section{Baire's category theorem}
 
@@ -509,6 +546,7 @@ Let~$X$ be a topological space.
 \end{definition}
 
 \begin{proposition}
+    \label{prop:equiv}
    Let~$X$ be a topological space. The following statements are equivalent.
   \begin{enumerate}
     \item $X$ is a Baire space.
@@ -606,12 +644,12 @@ Let~$X$ be a topological space.
   Hence~$Y$ is a Baire space.
 
   2~$\Rightarrow$~3. It suffices to prove that~$\inter(\bigcap_{n=1}^\infty \cl(S_n))\subset\cl(\bigcap_{n=1}^\infty S_n)$.
-  Let~$Y=\inter(\bigcap_{n=1}^\infty \cl(S_n))$. Then~$Y$ is a Baire space.
+  Let~$Y=\inter(\bigcap_{n=1}^\infty \cl(S_n))$. Then~$Y$ is an open subspace of~$X$ and hence a Baire space.
   Define $T_n = S_n\cap Y$ for each~$n\ge 1$. Then each~$T_n$ is open in~$Y$. Since~$Y$ is open
-  and~$Y\subset \cl(S_n)$, we know from item~\ref{it:dense} of Proposition~\ref{prop:dense}
+  and in~$X$ and~$Y\subset \cl_X(S_n)$, we know from item~\ref{it:dense} of Proposition~\ref{prop:dense}
   that~$T_n$ is dense in~$Y$. Hence~$\bigcap_{n=1}^\infty T_n$
-  is dense in~$Y$. Therefore, $Y \subset \cl(\bigcap_{n=1}^\infty T_n) \subset
-  \cl(\bigcap_{n=1}^\infty S_n)$ as desired.
+  is dense in~$Y$. Therefore, $Y \subset \cl_X(\bigcap_{n=1}^\infty T_n) \subset
+  \cl_X(\bigcap_{n=1}^\infty S_n)$ as desired.
 
   3~$\Rightarrow$~4. Obvious by the duality between interior and closure.
 
@@ -622,7 +660,7 @@ Let~$X$ be a topological space.
 \end{proof}
 
 Theorems~\ref{th:intclcm}, \ref{th:intcllch}, and~\ref{th:intcl} lead us to Baire's Category
-Theorem.
+Theorem. It can also be obtained by combining Corollary~\ref{coro:intcl} and Proposition~\ref{prop:equiv}.
 
 \begin{theorem}[Baire's Category Theorem, {\cite[Theorem~48.2]{Munkres_2000}}]
   \label{th:Baire}
