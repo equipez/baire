@@ -706,7 +706,8 @@ space, and~$\{C_n\}$ is a sequence of closed sets in~$X$.
 \begin{enumerate}
     \item If each~$C_n$ has no interior, then~$\bigcup_{n=1}^\infty C_n$ cannot be~$X$; indeed, it
         has no interior, and its complement is dense in~$X$.
-    \item If~$\bigcup_{n=1}^\infty C_n$ has interior~(for example, it equals~$X$), then at least one~$C_n$ has interior.
+    \item If~$\bigcup_{n=1}^\infty C_n$ has nonempty interior~(for example, it equals~$X$), then at least
+        one~$C_n$ has nonempty interior.
 \end{enumerate}
 
 \begin{proposition}
@@ -719,7 +720,7 @@ space, and~$\{C_n\}$ is a sequence of closed sets in~$X$.
     Then
     \begin{equation}
         \label{eq:union}
-    X = \bigcup_{n=1}^\infty \Span\{e_k \mathrel{:} 1\le k \le n\}
+        X = \bigcup_{n=1}^\infty \Span\{e_k \mathrel{:} 1\le k \le n\}.
     \end{equation}
     Since~$\Span\{e_k \mathrel{:} 1\le k \le n\}$ is a finite dimensional subspace of~$X$, it is
     closed. Since~$X$ is infinite dimensional, its finite dimensional subspaces have empty interior.
@@ -740,10 +741,13 @@ space, and~$\{C_n\}$ is a sequence of closed sets in~$X$.
         \\
         L \;=\; & \{f \in Y \mathrel{:} f \text{ is not left differentiable  at any } x \in [0,1]\}.
     \end{align*}
-    Note that the restriction of any function in~$R\cap L$ to~$[0,1]$ is nowhere differentiable
+    Then the restriction of any function in~$R\cap L$ to~$[0,1]$ is nowhere differentiable
     on~$[0,1]$.
     Therefore, it suffices to prove that~$R \cap L$ is dense in~$Y$ under the uniform norm.
     To this end, we prove that~$R$ and~$L$ are both residual sets in~$Y$ under the uniform norm.
+    (N.B.: The purpose of taking~$Y$, $L$, and~$C$ is to deal with the boundaries~$0$ and~$1$.
+    For a function on~$[0,1]$, its differentiability at~$0$ is defined as the right
+differentiability at~$0$, and similarly for~$1$.)
 
     Take~$R$ as an example.
     Define
@@ -771,7 +775,7 @@ convergence of~$\{f_k\}$ and the continuity of~$f_0$, for all~$h\ge 0$, we have
     Hence~\eqref{eq:fn} implies that~$|f_0(x_0+h) - f(x_0)| \le nh$ for all~$h>0$. Thus~$f_0\in C_n$,
     and~$C_n$ is closed.
 
-    $C_n$ has no interior, because in any neighborhood of any function~$f\in Y$, there exists
+    $C_n$ has no interior, because in any neighborhood of any function~$f\in Y$, there exists a
     continuous piecewise linear function whose slope of each linear piece is larger than~$n$ and
     hence not in~$C_n$. The proof is complete.
 \end{proof}
