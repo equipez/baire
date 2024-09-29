@@ -227,8 +227,9 @@ urlcolor=darkblue}
 \usepackage[scr=boondoxupr]{mathalfa}
 %\newcommand{\model}{\mathscr{h}}
 \newcommand{\model}{\mathbf{h}}
-\newcommand{\RR}{\mathbf{R}}
-\newcommand{\TT}{\mathbf{T}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\TT}{\mathcal{T}}
+\newcommand{\BB}{\mathcal{B}}
 
 
 \DeclareMathOperator{\inter}{int}
@@ -699,6 +700,103 @@ Theorem. It can also be obtained by combining Corollary~\ref{coro:intcl} and Pro
 \end{proof}
 
 \section{Examples}
+
+The application of Baire's category theorem often takes the following form. Let~$X$ be a Baire
+space, and~$\{C_n\}$ is a sequence of closed sets in~$X$.
+\begin{enumerate}
+    \item If each~$C_n$ has no interior, then~$\bigcup_{n=1}^\infty C_n$ cannot be~$X$; indeed, it
+        has no interior, and its complement is dense in~$X$.
+    \item If~$\bigcup_{n=1}^\infty C_n$ has interior~(for example, it equals~$X$), then at least one~$C_n$ has interior.
+\end{enumerate}
+
+\begin{proposition}
+    \label{prop:banach}
+    An infinite dimensional Banach space cannot have a countable Hamel basis.
+\end{proposition}
+
+\begin{proof}
+    Let~$X$ be an infinite dimensional Banach space. Assume that~$\{e_n\}$ is a countable Hamel basis of~$X$.
+    Then
+    \begin{equation}
+        \label{eq:union}
+    X = \bigcup_{n=1}^\infty \Span\{e_k \mathrel{:} 1\le k \le n\}
+    \end{equation}
+    Since~$\Span\{e_k \mathrel{:} 1\le k \le n\}$ is a finite dimensional subspace of~$X$, it is
+    closed. Since~$X$ is infinite dimensional, its finite dimensional subspaces have empty interior.
+    Thus~\eqref{eq:union} is impossible as~$X$ is a Baire space.
+\end{proof}
+
+\begin{proposition}
+    \label{prop:nodiff}
+    Let~$X$ be the set of all real-valued continuous functions on $[0,1]$.
+    The set of nowhere differentiable functions on~$[0,1]$ is dense in~$X$ under the uniform norm.
+\end{proposition}
+
+\begin{proof}
+    Let~$Y$ be the set of all periodic continuous functions on~$\RR$ with period~$2$.
+    Define
+    \begin{align*}
+        R \;=\; & \{f \in Y \mathrel{:} f \text{ is not right differentiable  at any } x \in [0,1]\},
+        \\
+        L \;=\; & \{f \in Y \mathrel{:} f \text{ is not left differentiable  at any } x \in [0,1]\}.
+    \end{align*}
+    Note that the restriction of any function in~$R\cap L$ to~$[0,1]$ is nowhere differentiable
+    on~$[0,1]$.
+    Therefore, it suffices to prove that~$R \cap L$ is dense in~$Y$ under the uniform norm.
+    To this end, we prove that~$R$ and~$L$ are both residual sets in~$Y$ under the uniform norm.
+
+    Take~$R$ as an example.
+    Define
+    \[
+        C_n \;=\; \{f \in Y \mathrel{:} \text{there exists an }x\in[0,1] \text{ such that } |f(x+h)
+        - f(x)| \le nh \text{ for all } h> 0\}.
+    \]
+    Then~$R \subset \bigcup_{n=1}^\infty C_n$ (for small~$h$, consider the right differentiability of~$f$; for
+    other~$h$, consider the boundedness of~$f$). We only need to that each~$C_n$ is closed and has empty
+    interior under the uniform norm.
+
+    Let~$\{f_k\}$ be a sequence in~$C_n$ that converges uniformly to~$f_0$.
+    Then there exists a
+    sequence~$\{x_k\} \subset[0,1]$ such that
+    \begin{equation}
+        \label{eq:fn}
+      |f_k(x_k+h) - f_k(x_k)| \le nh \quad \text{for all~} h>0.
+    \end{equation}
+    Assume without loss of generality that~$x_k\to x_0\in[0,1]$. By the uniform
+convergence of~$\{f_k\}$ and the continuity of~$f_0$, for all~$h\ge 0$, we have
+    \[
+    |f_k(x_k + h)- f_0(x_0 + h)| \le |f_k(x_k + h) - f_0(x_k +h)| + |f_0(x_k + h) - f_0(x_0 +h)|
+        \to 0 \quad \text{as } k\to \infty.
+    \]
+    Hence~\eqref{eq:fn} implies that~$|f_0(x_0+h) - f(x_0)| \le nh$ for all~$h>0$. Thus~$f_0\in C_n$,
+    and~$C_n$ is closed.
+
+    $C_n$ has no interior, because in any neighborhood of any function~$f\in Y$, there exists
+    continuous piecewise linear function whose slope of each linear piece is larger than~$n$ and
+    hence not in~$C_n$. The proof is complete.
+\end{proof}
+
+
+\begin{proposition}[Uniform boundedness priciple]
+    \label{prop:ub}
+    Let~$\TT$ be a set of bounded linear operators between normed linear spaces~$X$ and~$Y$.
+    If~$X$ is complete, and the set~$\{Tx \mathrel{:} T\in \TT\}$ is bounded in~$Y$ for all~$x\in X$,
+    then the set~$\TT$ is bounded in the operator norm.
+\end{proposition}
+
+\begin{proof}
+    Define
+    \[
+        X_n \;=\; \{x\in X \mathrel{:}  \|Tx\| \le n \text{ for all } T \in \TT\}.
+    \]
+    Then~$X = \bigcup_{n=1}^\infty X_n$ by assumption.  In addition, each~$X_n$ is closed by the
+    continuity of~$T \in \TT$. Since~$X$ is a Baire space, there exists an~$n$ such that~$X_n$
+    contains a ball~$\BB(x_0, r)$ with~$r>0$. For any~$T\in\TT$ and any~$x \in X$ with~$\|x\| = 1$, we have
+    \[
+        \|Tx\| \;=\; r^{-1}\|T(rx)\| \;\le\; r^{-1}\left[\|T(x_0 + rx)\| + \|T(x_0)\|\right] \;\le\; 2r^{-1} n.
+    \]
+    Hence~$\|T\|\le 2r^{-1}n$ for all~$T\in\TT$.
+\end{proof}
 
 \begin{proposition}
     \label{prop:nx}
