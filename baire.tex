@@ -267,8 +267,7 @@ urlcolor=darkblue}
 \author{
 Z. Zhang
 \thanks{
-Department of Applied Mathematics, The Hong Kong Polytechnic
-University, Hong Kong, China ({\tt zaikun.zhang@polyu.edu.hk}).
+    School of Mathematics, Sun Yat-sen University, China ({\tt zhangzaikun@mail.sysu.edu.cn}).
 }
 }
 
@@ -304,19 +303,20 @@ University, Hong Kong, China ({\tt zaikun.zhang@polyu.edu.hk}).
     \end{enumerate}
 \end{proposition}
 
+In Proposition~\ref{prop:subintcl}, we use a subscript to indicate the topological space which the
+interior or closure is defined with respect to. We will always do this if the context does not
+suffice to avoid confusion.
+
 \begin{proposition}
   \label{prop:subintcl}
   Let~$X$ be a topological space and~$Y$ be its subspace.
   \begin{enumerate}
-    \item For any~$S\subset Y$, $\inter_Y(S) \supset \inter_X(S)$;
+    \item For any~$S\subset Y$, we have~$\inter_Y(S) \supset \inter_X(S)$;
       if~$Y$ is open in~$X$, then $\inter_Y(S)=\inter_X(S)$.
-    \item For any~$S\subset Y$, $\cl_Y(S) = \cl_X(S) \cap Y$.
+    \item For any~$S\subset Y$, we have~$\cl_Y(S) = \cl_X(S) \cap Y$.
   \end{enumerate}
 \end{proposition}
 
-In Proposition~\ref{prop:subintcl}, we use a subscript to indicate the topological space which the
-interior or closure is defined with respect to. We will always do this if the context does not
-suffice to avoid confusion.
 
 \begin{proof}
   1. $\inter_X(S)$ is open in~$X$ and~$\inter_X(S)\subset S\subset Y$. Thus~$\inter_X(S)$ is an open
@@ -745,7 +745,7 @@ space, and~$\{C_n\}$ is a sequence of closed sets in~$X$.
     on~$[0,1]$.
     Therefore, it suffices to prove that~$R \cap L$ is dense in~$Y$ under the uniform norm.
     To this end, we prove that~$R$ and~$L$ are both residual sets in~$Y$ under the uniform norm.
-    (N.B.: The purpose of taking~$Y$, $L$, and~$C$ is to deal with the boundaries~$0$ and~$1$.
+    (N.B.: The purpose of taking~$Y$, $R$, and~$L$ is to deal with the boundaries~$0$ and~$1$.
     For a function on~$[0,1]$, its differentiability at~$0$ is defined as the right
 differentiability at~$0$, and similarly for~$1$.)
 
@@ -781,7 +781,7 @@ convergence of~$\{f_k\}$ and the continuity of~$f_0$, for all~$h\ge 0$, we have
 \end{proof}
 
 
-\begin{proposition}[Uniform boundedness priciple]
+\begin{proposition}[Uniform boundedness principle]
     \label{prop:ub}
     Let~$\TT$ be a set of bounded linear operators between normed linear spaces~$X$ and~$Y$.
     If~$X$ is complete, and the set~$\{Tx \mathrel{:} T\in \TT\}$ is bounded in~$Y$ for all~$x\in X$,
