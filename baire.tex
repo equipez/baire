@@ -498,18 +498,18 @@ $\inter(\cl(A))\cap A$ is dense in~$\inter(\cl(A))$.
     Let~$X$ be a complete metric space or a locally compact Hausdorff space,
     and~$\{S_n\}_{n=1}^\infty$ be a sequence of sets in~$X$.
     \begin{enumerate}
-        \item\label{it:dense} If each~$S_n$ is open and dense, then~$\bigcap_{n=1}^\infty S_n$ is dense.
+        \item\label{it:intdense} If each~$S_n$ is open and dense, then~$\bigcap_{n=1}^\infty S_n$ is dense.
         \item\label{it:emptyint} If each~$S_n$ is closed and has empty interior, then~$\bigcup_{n=1}^\infty S_n$ has empty interior.
     \end{enumerate}
 \end{corollary}
 
 \begin{proof}
-    \ref{it:dense}.~According to Theorems~\ref{th:intclcm} and~\ref{th:intcllch},
+    \ref{it:intdense}.~According to Theorems~\ref{th:intclcm} and~\ref{th:intcllch},
     $\cl(\bigcap_{n=1}^\infty S_n) \supset \inter( \bigcap_{n=1}^\infty \cl(S_n)) = X$.
 
     \ref{it:emptyint}.~According to Theorems~\ref{th:intclcm} and~\ref{th:intcllch},
     $\inter(\bigcup_{n=1}^\infty S_n) \subset \cl(\bigcap_{n=1}^\infty \inter(S_n)) = \emptyset$.
-    Alternatively, we can use item~\ref{it:dense} and the duality between interior and closure.
+    Alternatively, we can use item~\ref{it:intdense} and the duality between interior and closure.
 \end{proof}
 
 
@@ -647,9 +647,9 @@ Let~$X$ be a topological space.
   2~$\Rightarrow$~3. It suffices to prove that~$\inter(\bigcap_{n=1}^\infty \cl(S_n))\subset\cl(\bigcap_{n=1}^\infty S_n)$.
   Let~$Y=\inter(\bigcap_{n=1}^\infty \cl(S_n))$. Then~$Y$ is an open subspace of~$X$ and hence a Baire space.
   Define $T_n = S_n\cap Y$ for each~$n\ge 1$. Then each~$T_n$ is open in~$Y$. Since~$Y$ is open
-  in~$X$ and~$Y\subset \cl_X(S_n)$, we know from item~\ref{it:dense} of Proposition~\ref{prop:dense}
+  in~$X$ and~$Y\subset \cl_X(S_n)$, item~\ref{it:dense} of Proposition~\ref{prop:dense} ensures
   that~$T_n$ is dense in~$Y$. Hence~$\bigcap_{n=1}^\infty T_n$
-  is dense in~$Y$. Therefore, $Y \subset \cl_X(\bigcap_{n=1}^\infty T_n) \subset
+  is dense in~$Y$. Thus $Y \subset \cl_X(\bigcap_{n=1}^\infty T_n) \subset
   \cl_X(\bigcap_{n=1}^\infty S_n)$ as desired.
 
   3~$\Rightarrow$~4. Obvious by the duality between interior and closure.
@@ -719,12 +719,12 @@ space, and~$\{C_n\}$ is a sequence of closed sets in~$X$.
     Let~$X$ be an infinite dimensional Banach space. Assume that~$\{e_n\}$ is a countable Hamel basis of~$X$.
     Then
     \begin{equation}
-        \label{eq:union}
+        \label{eq:xunion}
         X = \bigcup_{n=1}^\infty \Span\{e_k \mathrel{:} 1\le k \le n\}.
     \end{equation}
     Since~$\Span\{e_k \mathrel{:} 1\le k \le n\}$ is a finite dimensional subspace of~$X$, it is
     closed. Since~$X$ is infinite dimensional, its finite dimensional subspaces have empty interior.
-    Thus~\eqref{eq:union} is impossible as~$X$ is a Baire space.
+    Thus~\eqref{eq:xunion} is impossible as~$X$ is a Baire space.
 \end{proof}
 
 \begin{proposition}
